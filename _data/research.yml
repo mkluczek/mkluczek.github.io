@@ -1,33 +1,47 @@
 # ─────────────────────────────────────────────────────────────
-#  Research areas — shown as cards. Add / remove / reorder freely.
-#  icon: one of  brain | layers | spectrum | leaf  (see main.js)
+#  What I work on — GeoAI for Earth Observation.
+#  Shown as cards. Add / remove / reorder freely.
+#  icon: brain | search | pulse | database | cpu | bot | spectrum | layers | leaf
 # ─────────────────────────────────────────────────────────────
 
-- title: "GeoAI & Machine Learning"
+- title: "Foundation Models & EO Embeddings"
   icon:  "brain"
   blurb: >
-    The core of my work: designing and benchmarking ML models —
-    Random Forest, SVM and deep neural networks — for Earth
-    Observation, with rigorous feature engineering, selection and
-    validation.
+    Generating dense, global embeddings from Sentinel-1 and Sentinel-2
+    at scale (Major TOM) — turning petabytes of imagery into a compact
+    latent space that powers downstream AI.
 
-- title: "Scalable EO Pipelines"
-  icon:  "layers"
+- title: "Semantic Search & Image Intelligence"
+  icon:  "search"
   blurb: >
-    Building reproducible, production-grade pipelines that run models
-    over large open satellite archives (Sentinel-2, PlanetScope) —
-    turning research prototypes into maps at scale.
+    Text-to-image and image-to-image search over massive EO archives
+    using multimodal embeddings — finding what matters in satellite
+    data without hand-crafted labels.
 
-- title: "Hyperspectral & Multitemporal Analysis"
-  icon:  "spectrum"
+- title: "Anomaly Detection & Monitoring"
+  icon:  "pulse"
   blurb: >
-    Extracting signal from airborne HySpex hyperspectral data and
-    multitemporal Sentinel-2 to crack hard classification problems in
-    complex terrain.
+    Building on EO embeddings to detect change and anomalies for
+    early-warning monitoring — configurable, reliable indicators over
+    large areas of interest.
 
-- title: "Applications: Ecosystem Monitoring"
-  icon:  "leaf"
+- title: "AI-Ready Datasets & Data Cubes"
+  icon:  "database"
   blurb: >
-    Putting the models to work on real problems — land cover, forest
-    species, wetland health and vegetation stress — where GeoAI meets
-    environmental science.
+    Curating and generating GPU-optimized training datasets and
+    analysis-ready data cubes (ZARR) — lowering the barrier to entry
+    for AI-for-EO research and production.
+
+- title: "Core Processing at Scale"
+  icon:  "cpu"
+  blurb: >
+    Production-grade processors on cloud infrastructure — cloud
+    masking, Sentinel-1 terrain correction (RTC/ARD) and
+    super-resolution — the reliable foundation under every AI service.
+
+- title: "GeoAI Agents & LLMs for EO"
+  icon:  "bot"
+  blurb: >
+    Exploring natural-language, tool-using agents (via MCP) that
+    orchestrate multi-step EO analysis — an intelligent co-pilot for
+    Earth Observation workflows.

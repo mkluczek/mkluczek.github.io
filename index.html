@@ -75,10 +75,47 @@ layout: default
   </div>
 </section>
 
-<!-- ─────────────────────── PUBLICATIONS ─────────────────── -->
-<section class="section" id="publications">
+<!-- ─────────────────── EXPERIENCE & EDUCATION ─────────────── -->
+<section class="section" id="path">
   <div class="wrap">
-    <p class="section__kicker reveal">03 — Publications</p>
+    <p class="section__kicker reveal">03 — Path</p>
+    <h2 class="section__title reveal">Experience &amp; education.</h2>
+    <div class="path">
+      <div class="path__col reveal">
+        <h3 class="path__head">Experience</h3>
+        <ol class="tl">
+          {% for x in site.data.experience %}
+          <li class="tl__item">
+            <span class="tl__period">{{ x.period }}</span>
+            <h4 class="tl__role">{{ x.role }}</h4>
+            <p class="tl__org">{{ x.org }}</p>
+            {% if x.note and x.note != "" %}<p class="tl__note">{{ x.note }}</p>{% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="path__col reveal">
+        <h3 class="path__head">Education</h3>
+        <ol class="tl">
+          {% for x in site.data.education %}
+          <li class="tl__item">
+            <span class="tl__period">{{ x.period }}</span>
+            <h4 class="tl__role">{{ x.degree }}</h4>
+            <p class="tl__org">{{ x.org }}</p>
+            {% if x.note and x.note != "" %}<p class="tl__note">{{ x.note }}</p>{% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+    <p class="path__more reveal"><a class="btn" href="{{ '/cv/' | relative_url }}">Full CV — talks, projects, awards ↗</a></p>
+  </div>
+</section>
+
+<!-- ─────────────────────── PUBLICATIONS ─────────────────── -->
+<section class="section section--alt" id="publications">
+  <div class="wrap">
+    <p class="section__kicker reveal">04 — Publications</p>
     <h2 class="section__title reveal">Selected work.</h2>
 
     <div class="pub-filters reveal" id="pubFilters"></div>
@@ -112,17 +149,17 @@ layout: default
 </section>
 
 <!-- ─────────────────────── CONTACT ──────────────────────── -->
-<section class="section section--alt" id="contact">
+<section class="section" id="contact">
   <div class="wrap contact">
-    <p class="section__kicker reveal">04 — Contact</p>
+    <p class="section__kicker reveal">05 — Contact</p>
     <h2 class="section__title reveal">Let's map something together.</h2>
     <p class="contact__lead reveal">Open to collaborations on Earth Observation, remote sensing and applied ML. The fastest way to reach me:</p>
     <div class="contact__links reveal">
       {% if p.links.email != "" %}<a class="chip" href="mailto:{{ p.links.email }}">✉ Email</a>{% endif %}
-      {% if p.links.scholar != "" %}<a class="chip" href="{{ p.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
-      {% if p.links.orcid != "" %}<a class="chip" href="{{ p.links.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
-      {% if p.links.github != "" %}<a class="chip" href="{{ p.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
       {% if p.links.linkedin != "" %}<a class="chip" href="{{ p.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+      {% if p.links.github != "" %}<a class="chip" href="{{ p.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if p.links.orcid != "" %}<a class="chip" href="{{ p.links.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
+      {% if p.links.scholar != "" %}<a class="chip" href="{{ p.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
       {% if p.links.researchgate != "" %}<a class="chip" href="{{ p.links.researchgate }}" target="_blank" rel="noopener">ResearchGate</a>{% endif %}
     </div>
   </div>

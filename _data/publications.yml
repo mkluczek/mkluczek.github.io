@@ -1,62 +1,89 @@
 # ─────────────────────────────────────────────────────────────
 #  Publications. Add a new entry by copying a block below.
-#  Newest first is nice, but the page sorts by `year` anyway.
+#  The page sorts by `year` (newest first) automatically.
 #
 #  Fields:
 #    title     (required)
 #    authors   your author list; wrap your own name in **..** to bold it
 #    venue     journal / conference
 #    year      number
-#    citations number (optional — shown as a badge)
 #    tags      list, used for the filter buttons (optional)
-#    url       link to the paper / DOI (optional)
+#    url       DOI / link to the paper (optional)
 # ─────────────────────────────────────────────────────────────
 
-- title: "Comparison of Support Vector Machines and Random Forests for CORINE Land Cover Mapping"
-  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
-  venue: "Remote Sensing"
-  year: 2021
-  tags: ["Land cover", "Machine learning"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
-
-- title: "Comparison of Random Forest, Support Vector Machines, and Neural Networks for Post-Disaster Forest Species Mapping"
-  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
-  venue: "Remote Sensing"
-  year: 2021
-  tags: ["Forests", "Machine learning"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
-
-- title: "Estimating the Chlorophyll Fluorescence Parameter Fv/Fm for Plant Stress Detection at Peatlands"
-  authors: "**M. Kluczek**, B. Zagajewski, A. Zwijacz-Kozica"
-  venue: "Ecological Informatics"
+- title: "Global and Dense Embeddings of Earth: Major TOM Floating in the Latent Space"
+  authors: "M. Czerkawski, **M. Kluczek**, J. S. Bojanowski"
+  venue: "arXiv (preprint)"
   year: 2024
-  tags: ["Vegetation stress", "Wetlands"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+  tags: ["Foundation models", "Machine learning"]
+  url: "https://doi.org/10.48550/arXiv.2412.05600"
 
-- title: "A Machine Learning Approach for Mapping Chlorophyll Fluorescence at Inland Wetlands"
+- title: "Mapping Spatiotemporal Mortality Patterns in Spruce Mountain Forests Using Sentinel-2 Data and Environmental Factors"
   authors: "**M. Kluczek**, B. Zagajewski"
-  venue: "Remote Sensing"
-  year: 2023
-  tags: ["Vegetation stress", "Wetlands", "Machine learning"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+  venue: "Ecological Informatics"
+  year: 2025
+  tags: ["Forests", "Machine learning"]
+  url: "https://doi.org/10.1016/j.ecoinf.2025.103074"
 
-- title: "Mountain Tree Species Mapping Using Sentinel-2, PlanetScope, and Airborne HySpex Imagery"
-  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
+- title: "Advanced Utilization of Satellite and Governmental Data for Determining the Coverage and Condition of Green Areas in Poland"
+  authors: "E. Panek-Chwastyk, K. Dąbrowska-Zielińska, A. Markowska, **M. Kluczek**, M. Pieniążek"
+  venue: "Int. Journal of Applied Earth Observation and Geoinformation"
+  year: 2024
+  tags: ["Land cover", "Machine learning"]
+  url: "https://doi.org/10.1016/j.jag.2024.103883"
+
+- title: "Combining Multitemporal Optical and Radar Satellite Data for Mapping the Tatra Mountains Non-Forest Plant Communities"
+  authors: "**M. Kluczek**, B. Zagajewski, M. Kycko"
+  venue: "Remote Sensing"
+  year: 2024
+  tags: ["Land cover", "Machine learning"]
+  url: "https://doi.org/10.3390/rs16081451"
+
+- title: "Mapping Management Intensity Types in Grasslands with Synergistic Use of Sentinel-1 and Sentinel-2 Satellite Images"
+  authors: "M. Bartold, **M. Kluczek**, K. Wróblewski, et al."
+  venue: "Scientific Reports"
+  year: 2024
+  tags: ["Grasslands", "Machine learning"]
+  url: "https://doi.org/10.1038/s41598-024-83699-4"
+
+- title: "Sentinel-2 versus PlanetScope Images for Goldenrod Invasive Plant Species Mapping"
+  authors: "B. Zagajewski, **M. Kluczek**, K. B. Zdunek, D. Holland"
+  venue: "Remote Sensing"
+  year: 2024
+  tags: ["Land cover", "Machine learning"]
+  url: "https://doi.org/10.3390/rs16040636"
+
+- title: "Mountain Tree Species Mapping Using Sentinel-2, PlanetScope, and Airborne HySpex Hyperspectral Imagery"
+  authors: "**M. Kluczek**, B. Zagajewski, T. Zwijacz-Kozica"
   venue: "Remote Sensing"
   year: 2023
   tags: ["Forests", "Hyperspectral"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+  url: "https://doi.org/10.3390/rs15030844"
 
-- title: "Examining the Sensitivity of Satellite-Derived Vegetation Indices to Plant Drought Stress in Grasslands"
-  authors: "**M. Kluczek**, B. Zagajewski"
-  venue: "Plants"
-  year: 2024
-  tags: ["Vegetation stress"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+- title: "A Machine Learning Approach for Mapping Chlorophyll Fluorescence at Inland Wetlands"
+  authors: "M. Bartold, **M. Kluczek**"
+  venue: "Remote Sensing"
+  year: 2023
+  tags: ["Wetlands", "Machine learning"]
+  url: "https://doi.org/10.3390/rs15092392"
 
-- title: "Airborne HySpex Hyperspectral Versus Multitemporal Sentinel-2 Images for Mountain Plant Communities Mapping"
-  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
+- title: "Airborne HySpex Hyperspectral vs. Multitemporal Sentinel-2 Images for Mountain Plant Communities Mapping"
+  authors: "**M. Kluczek**, B. Zagajewski, M. Kycko"
   venue: "Remote Sensing"
   year: 2022
   tags: ["Hyperspectral"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+  url: "https://doi.org/10.3390/rs14051209"
+
+- title: "Comparison of Random Forest, Support Vector Machines, and Neural Networks for Post-Disaster Forest Species Mapping"
+  authors: "B. Zagajewski, **M. Kluczek**, E. Raczko, et al."
+  venue: "Remote Sensing"
+  year: 2021
+  tags: ["Forests", "Machine learning"]
+  url: "https://doi.org/10.3390/rs13132581"
+
+- title: "Comparison of Support Vector Machines and Random Forests for CORINE Land Cover Mapping"
+  authors: "A. Dabija, **M. Kluczek**, B. Zagajewski, et al."
+  venue: "Remote Sensing"
+  year: 2021
+  tags: ["Land cover", "Machine learning"]
+  url: "https://doi.org/10.3390/rs13040777"

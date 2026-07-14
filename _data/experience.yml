@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────
+#  Work experience — timeline. Newest first.
+# ─────────────────────────────────────────────────────────────
+
+- period: "2026 — present"
+  role:   "Tech Lead — Earth Observation Algorithms Team"
+  org:    "CloudFerro S.A."
+  note:   "Leading GeoAI & ML algorithm development over large-scale open satellite archives."
+
+- period: "2024 — 2025"
+  role:   "Data Scientist"
+  org:    "CloudFerro S.A."
+  note:   "Foundation models, embeddings and EO pipelines on cloud infrastructure."
+
+- period: "2024 — 2026"
+  role:   "Project Leader & Principal Investigator"
+  org:    "University of Warsaw"
+  note:   "NCN Preludium grant — spruce forest damage from Sentinel-2 time series using ML."
+
+- period: "2022 — 2024"
+  role:   "Researcher, Remote Sensing Centre"
+  org:    "Institute of Geodesy and Cartography (IGiK)"
+  note:   "ML for vegetation, grasslands and crop monitoring across national and EU projects."
+
+- period: "2020 — 2022"
+  role:   "Junior Researcher, Remote Sensing Centre"
+  org:    "Institute of Geodesy and Cartography (IGiK)"
+  note:   ""
+
+- period: "2018"
+  role:   "Trainee"
+  org:    "Institute of Geodesy and Cartography (IGiK)"
+  note:   ""

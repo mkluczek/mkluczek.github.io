@@ -12,13 +12,13 @@ tagline:     "Turning satellite signals into insights"
 
 # A short intro paragraph for the About section (2–4 sentences).
 intro: >
-  I lead algorithm development for Earth Observation at CloudFerro —
-  designing the GeoAI models and pipelines that turn Sentinel-2,
-  hyperspectral and airborne imagery into reliable maps at scale. My
-  focus is robust, reproducible machine learning over open satellite
-  archives: model design and benchmarking, feature engineering and
-  validation — applied to problems from land cover to ecosystem
-  monitoring.
+  I lead GeoAI algorithm development for Earth Observation at
+  CloudFerro — building the models and pipelines that turn petabytes of
+  satellite data into ready-to-use AI: global embeddings and foundation
+  models, semantic search, anomaly detection and analysis-ready
+  datasets. My background is in remote sensing and machine learning,
+  and my focus now is making AI-for-EO scalable, reliable and
+  reproducible on cloud infrastructure.
 
 # Headline stats (shown as chips in the hero). Update the numbers.
 stats:
@@ -29,7 +29,7 @@ stats:
 
 # Contact + profiles. Leave a url blank ("") to hide that link.
 links:
-  email:    "mkluczek@cloudferro.com"
+  email:    "kluczekmartin@gmail.com"
   scholar:  "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
   orcid:    "https://orcid.org/0000-0003-2133-0984"
   github:   "https://github.com/mkluczek"

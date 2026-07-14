@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────────────────────
+#  Selected talks & conference presentations. Newest first.
+# ─────────────────────────────────────────────────────────────
+
+- year: 2025
+  title: "Monitoring mountain forest disturbance and recovery using Sentinel-2 dense time series"
+  event: "IGARSS 2025 — IEEE Int. Geoscience and Remote Sensing Symposium"
+  location: "Brisbane, Australia"
+
+- year: 2025
+  title: "Scalable Earth Observation Analytics through Global Major TOM Embeddings of Sentinel-1 and Sentinel-2 Data"
+  event: "ESA–NASA International Workshop on AI Foundation Models for EO, ESA-ESRIN"
+  location: "Frascati, Italy"
+
+- year: 2025
+  title: "Developing Global Embeddings from Sentinel-1 and Sentinel-2 Data to Enhance Earth Observation Analysis"
+  event: "EGU General Assembly 2025"
+  location: "Vienna, Austria"
+
+- year: 2024
+  title: "Assessment of Post-Disturbance Changes in Spruce Mountain Forests Using Sentinel-2 Data and Machine Learning"
+  event: "IGARSS 2024 — IEEE Int. Geoscience and Remote Sensing Symposium"
+  location: "Athens, Greece"
+
+- year: 2023
+  title: "Chlorophyll Fluorescence Mapping in Inland Wetlands through Machine Learning Techniques"
+  event: "FLEX Fluorescence Workshop, ESA-ESRIN"
+  location: "Frascati, Italy"
+
+- year: 2023
+  title: "Sentinel-2, PlanetScope and Airborne HySpex Hyperspectral Imagery for Mountain Woody Species Mapping"
+  event: "42nd EARSeL Symposium"
+  location: "Bucharest, Romania"
+
+- year: 2022
+  title: "HySpex Airborne Hyperspectral vs. Multitemporal Sentinel-2 for Mapping High-Mountain Plant Communities"
+  event: "12th EARSeL Workshop on Imaging Spectroscopy"
+  location: "Potsdam, Germany"
+
+- year: 2022
+  title: "Tools for information to farmers on grasslands yields under stressed conditions (GrasSAT)"
+  event: "ESA Living Planet Symposium"
+  location: "Bonn, Germany"
+
+- year: 2021
+  title: "Assessment of the Effectiveness of Land Cover Classification According to CORINE Land Cover Nomenclature"
+  event: "40th EARSeL Symposium"
+  location: "Warsaw, Poland"

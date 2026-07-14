@@ -89,10 +89,6 @@ img{ max-width:100%; display:block; }
   font-family:var(--display); font-weight:600; letter-spacing:-.01em;
   display:flex; align-items:center; gap:10px; font-size:1rem;
 }
-.nav__dot{
-  width:9px; height:9px; border-radius:50%;
-  background:var(--acc-grad); box-shadow:var(--glow);
-}
 .nav__links{ display:flex; gap:28px; }
 .nav__links a{
   font-size:.9rem; color:var(--muted); position:relative;
@@ -269,6 +265,28 @@ img{ max-width:100%; display:block; }
 .card__icon svg{ width:24px; height:24px; }
 .card__title{ font-family:var(--display); font-size:1.2rem; font-weight:600; margin:0 0 .5rem; }
 .card__blurb{ color:var(--muted); font-size:.98rem; margin:0; }
+
+/* ───────────────── Path (experience + education) ───────────────── */
+.path{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,5vw,60px); }
+@media (max-width:780px){ .path{ grid-template-columns:1fr; gap:44px; } }
+.path__head{
+  font-family:var(--mono); font-size:.8rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--acc); margin:0 0 22px;
+}
+.tl{ list-style:none; margin:0; padding:0; position:relative; }
+.tl__item{
+  position:relative; padding:0 0 26px 26px; border-left:1px solid var(--line);
+}
+.tl__item:last-child{ padding-bottom:0; }
+.tl__item::before{
+  content:""; position:absolute; left:-5px; top:5px; width:9px; height:9px; border-radius:50%;
+  background:var(--acc-grad); box-shadow:0 0 10px rgba(33,212,253,.5);
+}
+.tl__period{ font-family:var(--mono); font-size:.78rem; color:var(--acc-2); letter-spacing:.02em; }
+.tl__role{ font-family:var(--display); font-size:1.12rem; font-weight:600; margin:.25rem 0 .1rem; }
+.tl__org{ color:var(--text); font-size:.95rem; margin:0; }
+.tl__note{ color:var(--muted); font-size:.9rem; margin:.35rem 0 0; }
+.path__more{ margin-top:2.6rem; }
 
 /* ───────────────── Publications ───────────────── */
 .pub-filters{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:2rem; }
