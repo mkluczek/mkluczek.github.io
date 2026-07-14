@@ -15,11 +15,6 @@ layout: default
     <h1 class="hero__name reveal">{{ p.name }}</h1>
     <p class="hero__tagline reveal">{{ p.tagline }}</p>
 
-    <p class="hero__loc reveal">
-      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-      {{ p.location }}
-    </p>
-
     {% comment %} Hero stats hidden for now — re-enable when expertise is fleshed out.
     <ul class="stats reveal">
       {% for s in p.stats %}
@@ -148,10 +143,34 @@ layout: default
   </div>
 </section>
 
+<!-- ─────────────────────────── BLOG ─────────────────────── -->
+<section class="section" id="blog">
+  <div class="wrap">
+    <p class="section__kicker reveal">05 — Blog</p>
+    <h2 class="section__title reveal">Notes &amp; writing.</h2>
+    {% if site.posts.size > 0 %}
+    <ul class="posts">
+      {% for post in site.posts limit: 5 %}
+      <li class="post-card reveal">
+        <a href="{{ post.url | relative_url }}">
+          <span class="post-card__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3 class="post-card__title">{{ post.title }}</h3>
+          {% if post.excerpt %}<p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 170 }}</p>{% endif %}
+          <span class="post-card__link">Read →</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="contact__lead reveal">First post coming soon.</p>
+    {% endif %}
+  </div>
+</section>
+
 <!-- ─────────────────────── CONTACT ──────────────────────── -->
-<section class="section" id="contact">
+<section class="section section--alt" id="contact">
   <div class="wrap contact">
-    <p class="section__kicker reveal">05 — Contact</p>
+    <p class="section__kicker reveal">06 — Contact</p>
     <h2 class="section__title reveal">Let's map something together.</h2>
     <p class="contact__lead reveal">Open to collaborations on Earth Observation, remote sensing and applied ML. The fastest way to reach me:</p>
     <div class="contact__links reveal">

@@ -2,6 +2,21 @@
 #  Selected talks & conference presentations. Newest first.
 # ─────────────────────────────────────────────────────────────
 
+- year: 2026
+  title: "Time, Space, and Nightlights: Global Evaluation of Major TOM Earth Embeddings"
+  event: "EGU General Assembly 2026"
+  location: "Vienna, Austria"
+
+- year: 2026
+  title: "AI Foundation Models for Near Real-Time Environmental Monitoring from Satellite Data"
+  event: "EGU General Assembly 2026"
+  location: "Vienna, Austria"
+
+- year: 2026
+  title: "Similarity Search of Earth Observation Data Using Foundation Model Embeddings"
+  event: "EGU General Assembly 2026"
+  location: "Vienna, Austria"
+
 - year: 2025
   title: "Monitoring mountain forest disturbance and recovery using Sentinel-2 dense time series"
   event: "IGARSS 2025 — IEEE Int. Geoscience and Remote Sensing Symposium"

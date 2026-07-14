@@ -2,17 +2,17 @@
 #  Education — timeline. Newest first.
 # ─────────────────────────────────────────────────────────────
 
-- period: "2021 — present"
-  degree: "PhD candidate, Earth & Environmental Sciences"
-  org:    "Doctoral School of Exact and Natural Sciences, University of Warsaw"
+- period: "2021 — 2025"
+  degree: "PhD, Earth & Environmental Sciences (Remote Sensing) — diploma with honours"
+  org:    "University of Warsaw"
   note:   "Remote sensing & machine learning for vegetation classification of the Tatra Transboundary Biosphere Reserve. Supervisor: dr hab. Bogdan Zagajewski."
 
 - period: "2019 — 2021"
-  degree: "MSc in Geography — Remote Sensing, Geoinformatics & Cartography (with distinction)"
-  org:    "Faculty of Geography and Regional Studies, University of Warsaw"
+  degree: "MSc, Remote Sensing (Geography) — diploma with honours (GPA 4.92/5)"
+  org:    "University of Warsaw"
   note:   "Thesis on CORINE Land Cover classification accuracy."
 
 - period: "2016 — 2019"
-  degree: "BSc in Geography — Geoinformatics (with distinction)"
-  org:    "Faculty of Geography and Regional Studies, University of Warsaw"
+  degree: "BSc, Geoinformatics (Geography) — diploma with honours (GPA 4.73/5)"
+  org:    "University of Warsaw"
   note:   "Thesis on Landsat-based tree species classification (Karkonosze National Park)."

@@ -1,0 +1,133 @@
+---
+layout: default
+permalink: /cv/
+title: "CV — Marcin Kluczek"
+description: "Curriculum vitae — Marcin Kluczek, Earth Observation & GeoAI."
+---
+{% assign p = site.data.profile %}
+
+<section class="section cv">
+  <div class="wrap wrap--narrow">
+
+    <header class="cv__header reveal">
+      <p class="section__kicker">Curriculum Vitae</p>
+      <h1 class="cv__name">{{ p.name }}</h1>
+      <p class="cv__role">{{ p.role }} · {{ p.affiliation }} · {{ p.location }}</p>
+      <div class="contact__links cv__links">
+        {% if p.links.email != "" %}<a class="chip" href="mailto:{{ p.links.email }}">✉ Email</a>{% endif %}
+        {% if p.links.linkedin != "" %}<a class="chip" href="{{ p.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+        {% if p.links.github != "" %}<a class="chip" href="{{ p.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+        {% if p.links.orcid != "" %}<a class="chip" href="{{ p.links.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
+        {% if p.links.scholar != "" %}<a class="chip" href="{{ p.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+      </div>
+    </header>
+
+    <!-- Experience -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Experience</h2>
+      <ol class="tl">
+        {% for x in site.data.experience %}
+        <li class="tl__item">
+          <span class="tl__period">{{ x.period }}</span>
+          <h4 class="tl__role">{{ x.role }}</h4>
+          <p class="tl__org">{{ x.org }}</p>
+          {% if x.note and x.note != "" %}<p class="tl__note">{{ x.note }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <!-- Education -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Education</h2>
+      <ol class="tl">
+        {% for x in site.data.education %}
+        <li class="tl__item">
+          <span class="tl__period">{{ x.period }}</span>
+          <h4 class="tl__role">{{ x.degree }}</h4>
+          <p class="tl__org">{{ x.org }}</p>
+          {% if x.note and x.note != "" %}<p class="tl__note">{{ x.note }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <!-- Projects -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Projects &amp; Grants</h2>
+      <ol class="tl">
+        {% for x in site.data.projects %}
+        <li class="tl__item">
+          <span class="tl__period">{{ x.period }} · {{ x.role }}</span>
+          <h4 class="tl__role">{{ x.title }}</h4>
+          <p class="tl__org">{{ x.funder }}{% if x.org %} · {{ x.org }}{% endif %}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <!-- Publications -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Selected Publications</h2>
+      <ol class="cv__list">
+        {% assign pubs = site.data.publications | sort: "year" | reverse %}
+        {% for pub in pubs %}
+        <li class="cv__pub">
+          <span class="cv__year">{{ pub.year }}</span>
+          <div>
+            <span class="cv__pubtitle">{% if pub.url and pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</span>
+            {% if pub.authors %}<span class="cv__authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% endif %}
+            <span class="cv__venue">{{ pub.venue }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <!-- Talks -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Selected Talks &amp; Conferences</h2>
+      <ol class="cv__list">
+        {% assign talks = site.data.talks | sort: "year" | reverse %}
+        {% for t in talks %}
+        <li class="cv__pub">
+          <span class="cv__year">{{ t.year }}</span>
+          <div>
+            <span class="cv__pubtitle">{{ t.title }}</span>
+            <span class="cv__venue">{{ t.event }}{% if t.location %} · {{ t.location }}{% endif %}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <!-- Awards -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Awards &amp; Honours</h2>
+      <ol class="cv__list">
+        {% for a in site.data.awards %}
+        <li class="cv__pub">
+          <span class="cv__year">{{ a.year }}</span>
+          <div>
+            <span class="cv__pubtitle">{{ a.title }}</span>
+            {% if a.org %}<span class="cv__venue">{{ a.org }}</span>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <!-- Memberships -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Memberships &amp; Networks</h2>
+      <ul class="cv__tags">
+        {% for m in site.data.memberships %}
+        <li class="tag tag--lg">{{ m.name }}<span class="tag__since">since {{ m.since }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <p class="reveal"><a class="btn" href="{{ '/' | relative_url }}">← Back to home</a></p>
+
+  </div>
+</section>

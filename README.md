@@ -10,16 +10,41 @@ Almost everything lives in **`_data/`** as simple YAML files:
 
 | File | What it controls |
 |------|------------------|
-| `_data/profile.yml`      | Your name, role, tagline, intro, stats, and all contact/profile links |
-| `_data/research.yml`     | The "Research" cards (title, icon, blurb) |
-| `_data/publications.yml` | The "Publications" list. Copy a block to add a paper |
+| `_data/profile.yml`      | Name, role, tagline, intro, (hidden) stats, contact/profile links |
+| `_data/research.yml`     | Homepage "Research" cards (title, icon, blurb) |
+| `_data/publications.yml` | Publications list (homepage + CV) |
+| `_data/experience.yml`   | Experience timeline (homepage + CV) |
+| `_data/education.yml`    | Education timeline (homepage + CV) |
+| `_data/projects.yml`     | Projects & grants (CV page) |
+| `_data/talks.yml`        | Talks & conferences (CV page) |
+| `_data/awards.yml`       | Awards & honours (CV page) |
+| `_data/memberships.yml`  | Memberships & networks (CV page) |
 
-- **Add a publication:** open `_data/publications.yml`, copy one entry, change
-  the fields. Wrap your own name in `**M. Kluczek**` to bold it.
-- **Add a research card:** open `_data/research.yml`, copy a block.
-  `icon:` can be `layers`, `leaf`, `spectrum`, or `brain`.
+- **Add a publication:** copy one entry in `_data/publications.yml`.
+  Wrap your own name in `**M. Kluczek**` to bold it.
+- **Add a research card:** copy a block in `_data/research.yml`. `icon:` can be
+  `brain`, `search`, `pulse`, `database`, `cpu`, `bot`, `spectrum`, `layers`, `leaf`.
 - **Change a link:** edit `_data/profile.yml`. Leave a value as `""` to hide it.
 - **Change your photo:** replace `images/profile.png`.
+
+## Add a blog post
+
+Create a file in `_posts/` named `YYYY-MM-DD-some-title.md`:
+
+```markdown
+---
+layout: post
+title: "My post title"
+date: 2026-08-01
+tags: [GeoAI, Notes]
+excerpt: "One line shown in the blog list."
+---
+
+Your post content in **Markdown**.
+```
+
+It appears automatically in the Blog section and gets its own page at
+`/blog/some-title/`.
 
 ## Look & feel
 

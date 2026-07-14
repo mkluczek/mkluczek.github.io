@@ -10,6 +10,9 @@ url:         "https://mkluczek.github.io"
 baseurl:     ""
 lang:        "en"
 
+# Blog posts live in _posts/ and get clean /blog/<title>/ URLs
+permalink:   /blog/:title/
+
 # Build
 markdown:    kramdown
 highlighter: rouge

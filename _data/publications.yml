@@ -11,6 +11,13 @@
 #    url       DOI / link to the paper (optional)
 # ─────────────────────────────────────────────────────────────
 
+- title: "Land Cover Type Classification Using High-Resolution Orthophotomaps and Convolutional Neural Networks: A Case Study of Tatra National Park"
+  authors: "**M. Kluczek**, B. Zagajewski, et al."
+  venue: "Remote Sensing"
+  year: 2025
+  tags: ["Land cover", "Deep learning"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+
 - title: "Global and Dense Embeddings of Earth: Major TOM Floating in the Latent Space"
   authors: "M. Czerkawski, **M. Kluczek**, J. S. Bojanowski"
   venue: "arXiv (preprint)"
