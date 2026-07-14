@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────
+#  Your profile. Edit freely — everything here shows on the page.
+# ─────────────────────────────────────────────────────────────
+
+name:        "Marcin Kluczek"
+role:        "Tech Lead (Earth Observation Algorithmsś)"
+affiliation: "CloudFerro S.A."
+location:    "Warsaw, Poland"
+
+# One punchy line under your name (the hero headline)
+tagline:     "Turning satellite signals into ecological insight."
+
+# A short intro paragraph for the About section (2–4 sentences).
+intro: >
+  I work at the intersection of remote sensing and machine learning,
+  building methods that turn Sentinel-2,imagery into maps of the living planet — land cover, forest species,
+  wetland health and vegetation stress. My research pairs open Earth
+  Observation data with robust ML to make ecological monitoring
+  scalable and reproducible.
+
+# Headline stats (shown as chips in the hero). Update the numbers.
+stats:
+  - value: "686+"
+    label: "Citations"
+  - value: "13"
+    label: "h-index"
+  - value: "14"
+    label: "i10-index"
+  - value: "25+"
+    label: "Publications"
+
+# Contact + profiles. Leave a url blank ("") to hide that link.
+links:
+  email:    "mkluczek@cloudferro.com"
+  scholar:  "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+  orcid:    "https://orcid.org/0000-0003-2133-0984"
+  github:   "https://github.com/mkluczek"
+  linkedin: ""          # e.g. "https://www.linkedin.com/in/your-handle"
+  researchgate: ""      # e.g. "https://www.researchgate.net/profile/..."

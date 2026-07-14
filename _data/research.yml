@@ -1,0 +1,32 @@
+# ─────────────────────────────────────────────────────────────
+#  Research areas — shown as cards. Add / remove / reorder freely.
+#  icon: one of  layers | leaf | spectrum | brain  (see main.js)
+# ─────────────────────────────────────────────────────────────
+
+- title: "Land Cover & Land Use Mapping"
+  icon:  "layers"
+  blurb: >
+    Large-scale classification of landscapes from satellite imagery —
+    from CORINE-style land cover to post-disaster forest mapping —
+    benchmarking Random Forest, SVM and deep models.
+
+- title: "Vegetation Stress & Fluorescence"
+  icon:  "leaf"
+  blurb: >
+    Detecting plant stress from space: chlorophyll fluorescence
+    (Fv/Fm), drought sensitivity and ecosystem health across
+    peatlands, wetlands and grasslands.
+
+- title: "Hyperspectral & Multitemporal Imaging"
+  icon:  "spectrum"
+  blurb: >
+    Combining airborne HySpex hyperspectral data with multitemporal
+    Sentinel-2 and PlanetScope to map plant communities and tree
+    species in complex mountain terrain.
+
+- title: "Machine Learning for Remote Sensing"
+  icon:  "brain"
+  blurb: >
+    Designing reproducible ML pipelines — feature selection, model
+    comparison and validation — that scale over open Earth
+    Observation archives.

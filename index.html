@@ -1,0 +1,132 @@
+---
+layout: default
+---
+{% assign p = site.data.profile %}
+
+<span id="top"></span>
+
+<!-- ───────────────────────── HERO ───────────────────────── -->
+<section class="hero">
+  <div class="hero__earth" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <p class="hero__eyebrow reveal">
+      <span class="hero__ping"></span>{{ p.role }} · {{ p.affiliation }}
+    </p>
+    <h1 class="hero__name reveal">{{ p.name }}</h1>
+    <p class="hero__tagline reveal">{{ p.tagline }}</p>
+
+    <p class="hero__loc reveal">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      {{ p.location }}
+    </p>
+
+    {% if p.stats %}
+    <ul class="stats reveal">
+      {% for s in p.stats %}
+      <li class="stats__item">
+        <span class="stats__value">{{ s.value }}</span>
+        <span class="stats__label">{{ s.label }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="hero__cta reveal">
+      <a class="btn btn--primary" href="#publications">View publications</a>
+      {% if p.links.scholar != "" %}<a class="btn" href="{{ p.links.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>{% endif %}
+    </div>
+  </div>
+  <a class="hero__scroll" href="#about" aria-label="Scroll to content"><span></span></a>
+</section>
+
+<!-- ───────────────────────── ABOUT ───────────────────────── -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="about__text reveal">
+        <p class="section__kicker">01 — About</p>
+        <h2 class="section__title">Reading the planet from orbit.</h2>
+        <p class="about__lead">{{ p.intro }}</p>
+      </div>
+      <aside class="about__card reveal">
+        <img class="about__avatar" src="{{ '/images/profile.png' | relative_url }}" alt="{{ p.name }}" loading="lazy">
+        <div class="about__id">
+          <strong>{{ p.name }}</strong>
+          <span>{{ p.role }}</span>
+          <span class="about__org">{{ p.affiliation }}</span>
+        </div>
+        <ul class="about__spectral" aria-hidden="true"></ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────── RESEARCH ─────────────────────── -->
+<section class="section section--alt" id="research">
+  <div class="wrap">
+    <p class="section__kicker reveal">02 — Research</p>
+    <h2 class="section__title reveal">What I work on.</h2>
+    <div class="cards">
+      {% for r in site.data.research %}
+      <article class="card reveal" style="--i: {{ forloop.index0 }}">
+        <span class="card__icon">{% include icon.html name=r.icon %}</span>
+        <h3 class="card__title">{{ r.title }}</h3>
+        <p class="card__blurb">{{ r.blurb }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────── PUBLICATIONS ─────────────────── -->
+<section class="section" id="publications">
+  <div class="wrap">
+    <p class="section__kicker reveal">03 — Publications</p>
+    <h2 class="section__title reveal">Selected work.</h2>
+
+    <div class="pub-filters reveal" id="pubFilters"></div>
+
+    <ol class="pubs" id="pubList">
+      {% assign pubs = site.data.publications | sort: "year" | reverse %}
+      {% for pub in pubs %}
+      <li class="pub reveal" data-tags="{% for t in pub.tags %}{{ t | downcase }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+        <div class="pub__year">{{ pub.year }}</div>
+        <div class="pub__body">
+          <h3 class="pub__title">
+            {% if pub.url and pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+          </h3>
+          {% if pub.authors %}<p class="pub__authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+          <p class="pub__meta">
+            <span class="pub__venue">{{ pub.venue }}</span>
+            {% if pub.citations %}<span class="pub__cites">{{ pub.citations }} citations</span>{% endif %}
+          </p>
+          {% if pub.tags %}
+          <div class="pub__tags">{% for t in pub.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+
+    {% if p.links.scholar != "" %}
+    <p class="pubs__more reveal"><a class="btn" href="{{ p.links.scholar }}" target="_blank" rel="noopener">Full list on Google Scholar ↗</a></p>
+    {% endif %}
+  </div>
+</section>
+
+<!-- ─────────────────────── CONTACT ──────────────────────── -->
+<section class="section section--alt" id="contact">
+  <div class="wrap contact">
+    <p class="section__kicker reveal">04 — Contact</p>
+    <h2 class="section__title reveal">Let's map something together.</h2>
+    <p class="contact__lead reveal">Open to collaborations on Earth Observation, remote sensing and applied ML. The fastest way to reach me:</p>
+    <div class="contact__links reveal">
+      {% if p.links.email != "" %}<a class="chip" href="mailto:{{ p.links.email }}">✉ Email</a>{% endif %}
+      {% if p.links.scholar != "" %}<a class="chip" href="{{ p.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+      {% if p.links.orcid != "" %}<a class="chip" href="{{ p.links.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
+      {% if p.links.github != "" %}<a class="chip" href="{{ p.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if p.links.linkedin != "" %}<a class="chip" href="{{ p.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+      {% if p.links.researchgate != "" %}<a class="chip" href="{{ p.links.researchgate }}" target="_blank" rel="noopener">ResearchGate</a>{% endif %}
+    </div>
+  </div>
+</section>

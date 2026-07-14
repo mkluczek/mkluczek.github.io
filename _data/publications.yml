@@ -1,0 +1,69 @@
+# ─────────────────────────────────────────────────────────────
+#  Publications. Add a new entry by copying a block below.
+#  Newest first is nice, but the page sorts by `year` anyway.
+#
+#  Fields:
+#    title     (required)
+#    authors   your author list; wrap your own name in **..** to bold it
+#    venue     journal / conference
+#    year      number
+#    citations number (optional — shown as a badge)
+#    tags      list, used for the filter buttons (optional)
+#    url       link to the paper / DOI (optional)
+# ─────────────────────────────────────────────────────────────
+
+- title: "Comparison of Support Vector Machines and Random Forests for CORINE Land Cover Mapping"
+  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
+  venue: "Remote Sensing"
+  year: 2021
+  citations: 128
+  tags: ["Land cover", "Machine learning"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+
+- title: "Comparison of Random Forest, Support Vector Machines, and Neural Networks for Post-Disaster Forest Species Mapping"
+  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
+  venue: "Remote Sensing"
+  year: 2021
+  citations: 103
+  tags: ["Forests", "Machine learning"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+
+- title: "Estimating the Chlorophyll Fluorescence Parameter Fv/Fm for Plant Stress Detection at Peatlands"
+  authors: "**M. Kluczek**, B. Zagajewski, A. Zwijacz-Kozica"
+  venue: "Ecological Informatics"
+  year: 2024
+  citations: 87
+  tags: ["Vegetation stress", "Wetlands"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+
+- title: "A Machine Learning Approach for Mapping Chlorophyll Fluorescence at Inland Wetlands"
+  authors: "**M. Kluczek**, B. Zagajewski"
+  venue: "Remote Sensing"
+  year: 2023
+  citations: 64
+  tags: ["Vegetation stress", "Wetlands", "Machine learning"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+
+- title: "Mountain Tree Species Mapping Using Sentinel-2, PlanetScope, and Airborne HySpex Imagery"
+  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
+  venue: "Remote Sensing"
+  year: 2023
+  citations: 52
+  tags: ["Forests", "Hyperspectral"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+
+- title: "Examining the Sensitivity of Satellite-Derived Vegetation Indices to Plant Drought Stress in Grasslands"
+  authors: "**M. Kluczek**, B. Zagajewski"
+  venue: "Plants"
+  year: 2024
+  citations: 33
+  tags: ["Vegetation stress"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+
+- title: "Airborne HySpex Hyperspectral Versus Multitemporal Sentinel-2 Images for Mountain Plant Communities Mapping"
+  authors: "**M. Kluczek**, B. Zagajewski, T. Kycko"
+  venue: "Remote Sensing"
+  year: 2022
+  citations: 33
+  tags: ["Hyperspectral"]
+  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
