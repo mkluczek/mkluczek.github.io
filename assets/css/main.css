@@ -353,6 +353,23 @@ img{ max-width:100%; display:block; }
 .post-card__excerpt{ color:var(--muted); font-size:.98rem; margin:0 0 .8rem; }
 .post-card__link{ font-size:.9rem; color:var(--acc); font-weight:500; }
 
+/* ───────────────── Blog "coming soon" ───────────────── */
+.soon{
+  border:1px dashed var(--line-2); border-radius:var(--r);
+  padding:44px 40px; background:var(--panel);
+  display:flex; flex-direction:column; align-items:flex-start; gap:14px;
+}
+.soon__badge{
+  display:inline-flex; align-items:center; gap:9px;
+  font-family:var(--mono); font-size:.8rem; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--acc); padding:7px 15px; border-radius:100px;
+  border:1px solid var(--line); background:rgba(57,255,158,.06);
+}
+.soon__dot{ width:8px; height:8px; border-radius:50%; background:var(--acc); box-shadow:0 0 10px var(--acc); animation:ping 2.4s infinite; }
+@keyframes ping{ 0%{box-shadow:0 0 0 0 rgba(57,255,158,.5);} 70%{box-shadow:0 0 0 9px rgba(57,255,158,0);} 100%{box-shadow:0 0 0 0 rgba(57,255,158,0);} }
+.soon__text{ color:var(--muted); font-size:1.1rem; margin:0; max-width:48ch; }
+@media (prefers-reduced-motion:reduce){ .soon__dot{ animation:none; } }
+
 /* ───────────────── Single post ───────────────── */
 .wrap--narrow{ max-width:760px; }
 .post{ padding-top:calc(var(--bar-h) + 90px); }

@@ -29,7 +29,7 @@ stats:
     label: "h-index"
   - value: "25+"
     label: "Publications"
-  - value: "686"
+  - value: "680+"
     label: "Citations"
 
 # Contact + profiles. Leave a url blank ("") to hide that link.
