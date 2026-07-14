@@ -7,6 +7,19 @@ role:        "Tech Lead (Earth Observation Algorithms)"
 affiliation: "CloudFerro S.A."
 location:    "Warsaw, Poland"
 
+# SEO keywords — help search engines understand the site (edit freely)
+keywords:
+  - "Marcin Kluczek"
+  - "GeoAI"
+  - "Earth Observation"
+  - "Remote Sensing"
+  - "Machine Learning"
+  - "Foundation Models"
+  - "Satellite Imagery"
+  - "Sentinel-2"
+  - "CloudFerro"
+  - "Deep Learning"
+
 # Small keyword line ABOVE your name in the hero (keep it short & punchy)
 eyebrow:     "GeoAI · Foundation Models · Earth Observation"
 

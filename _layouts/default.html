@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="{{ site.data.profile.name }}">
+  <meta name="robots" content="index, follow">
+  {% if site.data.profile.keywords %}<meta name="keywords" content="{{ site.data.profile.keywords | join: ', ' }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
@@ -28,6 +32,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500;600;700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  {%- assign pr = site.data.profile -%}
+  {%- capture sameas_raw -%}{% if pr.links.scholar != "" %}{{ pr.links.scholar }}|{% endif %}{% if pr.links.orcid != "" %}{{ pr.links.orcid }}|{% endif %}{% if pr.links.github != "" %}{{ pr.links.github }}|{% endif %}{% if pr.links.linkedin != "" %}{{ pr.links.linkedin }}|{% endif %}{% if pr.links.researchgate != "" %}{{ pr.links.researchgate }}{% endif %}{%- endcapture -%}
+  {%- assign sameas = sameas_raw | split: "|" -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ pr.name | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "image": {{ '/images/profile.png' | absolute_url | jsonify }},
+    "jobTitle": {{ pr.role | jsonify }},
+    "worksFor": { "@type": "Organization", "name": {{ pr.affiliation | jsonify }} },
+    "homeLocation": { "@type": "Place", "name": {{ pr.location | jsonify }} },
+    "knowsAbout": {{ pr.keywords | jsonify }},
+    "sameAs": {{ sameas | jsonify }}
+  }
+  </script>
 </head>
 <body>
   <canvas id="starfield" aria-hidden="true"></canvas>
