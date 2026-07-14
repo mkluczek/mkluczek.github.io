@@ -19,6 +19,7 @@
   --glow:      0 0 40px rgba(33,212,253,.25);
   --r:         16px;
   --wrap:      1120px;
+  --bar-h:     36px;
   --ease:      cubic-bezier(.22,.61,.36,1);
   --font:      "Sora", system-ui, -apple-system, sans-serif;
   --display:   "Saira Semi Condensed", var(--font);
@@ -56,9 +57,23 @@ img{ max-width:100%; display:block; }
 
 .wrap{ width:100%; max-width:var(--wrap); margin-inline:auto; padding-inline:clamp(20px,5vw,40px); }
 
+/* ───────────────── Under-construction bar ───────────────── */
+.topbar{
+  position:fixed; top:0; left:0; right:0; z-index:60; height:var(--bar-h);
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  font-family:var(--mono); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+  color:#04120c; background:var(--acc-grad);
+  overflow:hidden; white-space:nowrap;
+}
+.topbar b{ font-weight:600; }
+.topbar__glyph{ animation:spin 3.6s linear infinite; display:inline-block; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+@media (prefers-reduced-motion:reduce){ .topbar__glyph{ animation:none; } }
+@media (max-width:520px){ .topbar{ letter-spacing:.08em; font-size:.66rem; } }
+
 /* ───────────────── Nav ───────────────── */
 .nav{
-  position:fixed; inset:0 0 auto 0; z-index:50;
+  position:fixed; top:var(--bar-h); left:0; right:0; z-index:50;
   display:flex; align-items:center; justify-content:space-between;
   padding:16px clamp(20px,5vw,40px);
   transition:background .4s var(--ease), border-color .4s var(--ease), padding .4s var(--ease);
@@ -135,17 +150,15 @@ img{ max-width:100%; display:block; }
 }
 .hero__inner{ position:relative; z-index:2; }
 .hero__eyebrow{
-  display:inline-flex; align-items:center; gap:10px;
-  font-family:var(--mono); font-size:.78rem; letter-spacing:.04em;
-  text-transform:uppercase; color:var(--acc-2);
-  padding:7px 14px; border:1px solid var(--line); border-radius:100px;
-  background:var(--panel);
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  font-family:var(--mono); font-size:.8rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:0;
 }
-.hero__ping{
-  width:8px; height:8px; border-radius:50%; background:var(--acc);
-  box-shadow:0 0 0 0 rgba(57,255,158,.6); animation:ping 2.4s infinite;
+.hero__eyebrow-line{
+  width:40px; height:2px; border-radius:2px; flex:none;
+  background:var(--acc-grad); box-shadow:0 0 12px rgba(33,212,253,.5);
 }
-@keyframes ping{ 0%{box-shadow:0 0 0 0 rgba(57,255,158,.5);} 70%{box-shadow:0 0 0 10px rgba(57,255,158,0);} 100%{box-shadow:0 0 0 0 rgba(57,255,158,0);} }
+.hero__eyebrow-at{ color:var(--acc-2); }
 
 .hero__name{
   font-family:var(--display); font-weight:700;

@@ -24,8 +24,6 @@ intro: >
 stats:
   - value: "13"
     label: "h-index"
-  - value: "14"
-    label: "i10-index"
   - value: "25+"
     label: "Publications"
 
@@ -35,5 +33,5 @@ links:
   scholar:  "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
   orcid:    "https://orcid.org/0000-0003-2133-0984"
   github:   "https://github.com/mkluczek"
-  linkedin: ""          # e.g. "https://www.linkedin.com/in/your-handle"
+  linkedin: "https://www.linkedin.com/in/marcin-kluczek-03852a1a8/"
   researchgate: ""      # e.g. "https://www.researchgate.net/profile/..."
