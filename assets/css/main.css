@@ -20,8 +20,8 @@
   --r:         16px;
   --wrap:      1120px;
   --ease:      cubic-bezier(.22,.61,.36,1);
-  --font:      "Inter", system-ui, -apple-system, sans-serif;
-  --display:   "Space Grotesk", var(--font);
+  --font:      "Sora", system-ui, -apple-system, sans-serif;
+  --display:   "Saira Semi Condensed", var(--font);
   --mono:      "JetBrains Mono", ui-monospace, monospace;
 }
 
@@ -149,7 +149,7 @@ img{ max-width:100%; display:block; }
 
 .hero__name{
   font-family:var(--display); font-weight:700;
-  font-size:clamp(2.8rem,9vw,6rem); line-height:.98; letter-spacing:-.03em;
+  font-size:clamp(2.9rem,9.4vw,6.4rem); line-height:.95; letter-spacing:-.005em;
   margin:.28em 0 .12em;
   background:linear-gradient(180deg,#fff 30%, #9fb4cc);
   -webkit-background-clip:text; background-clip:text; color:transparent;
@@ -197,8 +197,8 @@ img{ max-width:100%; display:block; }
   text-transform:uppercase; color:var(--acc); margin:0 0 .6rem;
 }
 .section__title{
-  font-family:var(--display); font-weight:600; letter-spacing:-.02em;
-  font-size:clamp(1.9rem,4.5vw,3rem); line-height:1.05; margin:0 0 2.4rem;
+  font-family:var(--display); font-weight:600; letter-spacing:-.005em;
+  font-size:clamp(2rem,4.7vw,3.2rem); line-height:1.03; margin:0 0 2.4rem;
 }
 
 /* ───────────────── About ───────────────── */

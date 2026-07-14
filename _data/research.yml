@@ -1,32 +1,33 @@
 # ─────────────────────────────────────────────────────────────
 #  Research areas — shown as cards. Add / remove / reorder freely.
-#  icon: one of  layers | leaf | spectrum | brain  (see main.js)
+#  icon: one of  brain | layers | spectrum | leaf  (see main.js)
 # ─────────────────────────────────────────────────────────────
 
-- title: "Land Cover & Land Use Mapping"
-  icon:  "layers"
-  blurb: >
-    Large-scale classification of landscapes from satellite imagery —
-    from CORINE-style land cover to post-disaster forest mapping —
-    benchmarking Random Forest, SVM and deep models.
-
-- title: "Vegetation Stress & Fluorescence"
-  icon:  "leaf"
-  blurb: >
-    Detecting plant stress from space: chlorophyll fluorescence
-    (Fv/Fm), drought sensitivity and ecosystem health across
-    peatlands, wetlands and grasslands.
-
-- title: "Hyperspectral & Multitemporal Imaging"
-  icon:  "spectrum"
-  blurb: >
-    Combining airborne HySpex hyperspectral data with multitemporal
-    Sentinel-2 and PlanetScope to map plant communities and tree
-    species in complex mountain terrain.
-
-- title: "Machine Learning for Remote Sensing"
+- title: "GeoAI & Machine Learning"
   icon:  "brain"
   blurb: >
-    Designing reproducible ML pipelines — feature selection, model
-    comparison and validation — that scale over open Earth
-    Observation archives.
+    The core of my work: designing and benchmarking ML models —
+    Random Forest, SVM and deep neural networks — for Earth
+    Observation, with rigorous feature engineering, selection and
+    validation.
+
+- title: "Scalable EO Pipelines"
+  icon:  "layers"
+  blurb: >
+    Building reproducible, production-grade pipelines that run models
+    over large open satellite archives (Sentinel-2, PlanetScope) —
+    turning research prototypes into maps at scale.
+
+- title: "Hyperspectral & Multitemporal Analysis"
+  icon:  "spectrum"
+  blurb: >
+    Extracting signal from airborne HySpex hyperspectral data and
+    multitemporal Sentinel-2 to crack hard classification problems in
+    complex terrain.
+
+- title: "Applications: Ecosystem Monitoring"
+  icon:  "leaf"
+  blurb: >
+    Putting the models to work on real problems — land cover, forest
+    species, wetland health and vegetation stress — where GeoAI meets
+    environmental science.

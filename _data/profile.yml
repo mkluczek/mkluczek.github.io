@@ -8,20 +8,20 @@ affiliation: "CloudFerro S.A."
 location:    "Warsaw, Poland"
 
 # One punchy line under your name (the hero headline)
-tagline:     "Turning satellite signals into insight."
+tagline:     "Turning satellite signals into insights"
 
 # A short intro paragraph for the About section (2–4 sentences).
 intro: >
-  I work at the intersection of remote sensing and machine learning,
-  building methods that turn Sentinel-2,imagery into maps of the living planet — land cover, forest species,
-  wetland health and vegetation stress. My research pairs open Earth
-  Observation data with robust ML to make ecological monitoring
-  scalable and reproducible.
+  I lead algorithm development for Earth Observation at CloudFerro —
+  designing the GeoAI models and pipelines that turn Sentinel-2,
+  hyperspectral and airborne imagery into reliable maps at scale. My
+  focus is robust, reproducible machine learning over open satellite
+  archives: model design and benchmarking, feature engineering and
+  validation — applied to problems from land cover to ecosystem
+  monitoring.
 
 # Headline stats (shown as chips in the hero). Update the numbers.
 stats:
-  - value: "686+"
-    label: "Citations"
   - value: "13"
     label: "h-index"
   - value: "14"
