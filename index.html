@@ -20,20 +20,17 @@ layout: default
       {{ p.location }}
     </p>
 
-    {% if p.stats %}
+    {% comment %} Hero stats hidden for now — re-enable when expertise is fleshed out.
     <ul class="stats reveal">
       {% for s in p.stats %}
-      <li class="stats__item">
-        <span class="stats__value">{{ s.value }}</span>
-        <span class="stats__label">{{ s.label }}</span>
-      </li>
+      <li class="stats__item"><span class="stats__value">{{ s.value }}</span><span class="stats__label">{{ s.label }}</span></li>
       {% endfor %}
     </ul>
-    {% endif %}
+    {% endcomment %}
 
     <div class="hero__cta reveal">
-      <a class="btn btn--primary" href="#publications">View publications</a>
-      {% if p.links.scholar != "" %}<a class="btn" href="{{ p.links.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>{% endif %}
+      <a class="btn btn--primary" href="#contact">Get in touch</a>
+      <a class="btn" href="#research">What I do ↓</a>
     </div>
   </div>
   <a class="hero__scroll" href="#about" aria-label="Scroll to content"><span></span></a>
