@@ -1,0 +1,18 @@
+# ─────────────────────────────────────────────────────────────
+#  Published research datasets. Newest first.
+# ─────────────────────────────────────────────────────────────
+
+- year: 2025
+  title: "Integrated spectrometric and bioradiometric dataset for assessing the condition of Tatra spruce forests"
+  where: "University of Warsaw Research Data"
+  url:   "https://doi.org/10.58132/ZHJ33E"
+
+- year: 2024
+  title: "Major TOM — global, dense embeddings of Earth from Sentinel-1 and Sentinel-2"
+  where: "Hugging Face"
+  url:   "https://huggingface.co/Major-TOM"
+
+- year: 2024
+  title: "Sentinel-2 satellite database for the Tatra Transboundary Biosphere Reserve"
+  where: "University of Warsaw Research Data"
+  url:   "https://doi.org/10.58132/QURZUN"

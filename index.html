@@ -10,7 +10,7 @@ layout: default
   <div class="hero__earth" aria-hidden="true"></div>
   <div class="wrap hero__inner">
     <p class="hero__eyebrow reveal">
-      <span class="hero__eyebrow-line"></span>{{ p.role }} <span class="hero__eyebrow-at">@</span> {{ p.affiliation }}
+      <span class="hero__eyebrow-line"></span>{{ p.eyebrow }}
     </p>
     <h1 class="hero__name reveal">{{ p.name }}</h1>
     <p class="hero__tagline reveal">{{ p.tagline }}</p>
@@ -103,7 +103,6 @@ layout: default
         </ol>
       </div>
     </div>
-    <p class="path__more reveal"><a class="btn" href="{{ '/cv/' | relative_url }}">Full CV — talks, projects, awards ↗</a></p>
   </div>
 </section>
 
@@ -113,25 +112,24 @@ layout: default
     <p class="section__kicker reveal">04 — Publications</p>
     <h2 class="section__title reveal">Selected work.</h2>
 
-    <div class="pub-filters reveal" id="pubFilters"></div>
+    {% if p.stats %}
+    <ul class="pub-stats reveal">
+      {% for s in p.stats %}
+      <li class="pub-stats__item"><span class="pub-stats__v">{{ s.value }}</span><span class="pub-stats__l">{{ s.label }}</span></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
 
     <ol class="pubs" id="pubList">
       {% assign pubs = site.data.publications | sort: "year" | reverse %}
       {% for pub in pubs %}
-      <li class="pub reveal" data-tags="{% for t in pub.tags %}{{ t | downcase }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+      <li class="pub reveal">
         <div class="pub__year">{{ pub.year }}</div>
         <div class="pub__body">
           <h3 class="pub__title">
             {% if pub.url and pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
           </h3>
-          {% if pub.authors %}<p class="pub__authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
-          <p class="pub__meta">
-            <span class="pub__venue">{{ pub.venue }}</span>
-            {% if pub.citations %}<span class="pub__cites">{{ pub.citations }} citations</span>{% endif %}
-          </p>
-          {% if pub.tags %}
-          <div class="pub__tags">{% for t in pub.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>
-          {% endif %}
+          <p class="pub__meta"><span class="pub__venue">{{ pub.venue }}</span></p>
         </div>
       </li>
       {% endfor %}

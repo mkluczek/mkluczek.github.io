@@ -7,72 +7,124 @@
 #    authors   your author list; wrap your own name in **..** to bold it
 #    venue     journal / conference
 #    year      number
-#    tags      list, used for the filter buttons (optional)
+#    tags      list, used for the filter buttons (keep them ML/AI-focused)
 #    url       DOI / link to the paper (optional)
 # ─────────────────────────────────────────────────────────────
 
 - title: "Land Cover Type Classification Using High-Resolution Orthophotomaps and Convolutional Neural Networks: A Case Study of Tatra National Park"
   authors: "**M. Kluczek**, B. Zagajewski, et al."
-  venue: "Remote Sensing"
+  venue: "Remote Sensing 18(1), 114"
   year: 2025
-  tags: ["Land cover", "Deep learning"]
-  url: "https://scholar.google.com/citations?user=EJ4OXA8AAAAJ&hl=en"
+  tags: ["Deep learning"]
+  url: "https://doi.org/10.3390/rs18010114"
 
-- title: "Global and Dense Embeddings of Earth: Major TOM Floating in the Latent Space"
-  authors: "M. Czerkawski, **M. Kluczek**, J. S. Bojanowski"
-  venue: "arXiv (preprint)"
-  year: 2024
-  tags: ["Foundation models", "Machine learning"]
-  url: "https://doi.org/10.48550/arXiv.2412.05600"
+- title: "An Automated Approach for Updating Land Cover Change Maps Using Satellite Imagery"
+  authors: "M. Bartold, **M. Kluczek**, K. Dąbrowska-Zielińska"
+  venue: "Economics and Environment"
+  year: 2025
+  tags: ["Machine learning"]
+  url: "https://doi.org/10.34659/eis.2025.92.1.810"
 
 - title: "Mapping Spatiotemporal Mortality Patterns in Spruce Mountain Forests Using Sentinel-2 Data and Environmental Factors"
   authors: "**M. Kluczek**, B. Zagajewski"
   venue: "Ecological Informatics"
   year: 2025
-  tags: ["Forests", "Machine learning"]
+  tags: ["Machine learning"]
   url: "https://doi.org/10.1016/j.ecoinf.2025.103074"
+
+- title: "Global and Dense Embeddings of Earth: Major TOM Floating in the Latent Space"
+  authors: "M. Czerkawski, **M. Kluczek**, J. S. Bojanowski"
+  venue: "arXiv (preprint)"
+  year: 2024
+  tags: ["Foundation models"]
+  url: "https://doi.org/10.48550/arXiv.2412.05600"
+
+- title: "Mapping Management Intensity Types in Grasslands with Synergistic Use of Sentinel-1 and Sentinel-2 Satellite Images"
+  authors: "M. Bartold, **M. Kluczek**, K. Wróblewski, et al."
+  venue: "Scientific Reports"
+  year: 2024
+  tags: ["Machine learning"]
+  url: "https://doi.org/10.1038/s41598-024-83699-4"
+
+- title: "Integrating Copernicus LMS with Ground Measurements for Leaf Area Index and Biomass Assessment for Grasslands in Poland and Norway"
+  authors: "K. Dąbrowska-Zielińska, K. Wróblewski, P. Goliński, …, **M. Kluczek**, et al."
+  venue: "International Journal of Digital Earth"
+  year: 2024
+  url: "https://doi.org/10.1080/17538947.2024.2425165"
+
+- title: "Examining the Sensitivity of Satellite-Derived Vegetation Indices to Plant Drought Stress in Grasslands in Poland"
+  authors: "M. Bartold, K. Wróblewski, **M. Kluczek**, et al."
+  venue: "Plants"
+  year: 2024
+  url: "https://doi.org/10.3390/plants13162319"
+
+- title: "Estimating the Chlorophyll Fluorescence Parameter Fv/Fm for Plant Stress Detection at Peatlands with Sentinel-2 Imagery"
+  authors: "M. Bartold, **M. Kluczek**"
+  venue: "Ecological Informatics"
+  year: 2024
+  tags: ["Machine learning"]
+  url: "https://doi.org/10.1016/j.ecoinf.2024.102603"
 
 - title: "Advanced Utilization of Satellite and Governmental Data for Determining the Coverage and Condition of Green Areas in Poland"
   authors: "E. Panek-Chwastyk, K. Dąbrowska-Zielińska, A. Markowska, **M. Kluczek**, M. Pieniążek"
   venue: "Int. Journal of Applied Earth Observation and Geoinformation"
   year: 2024
-  tags: ["Land cover", "Machine learning"]
+  tags: ["Machine learning"]
   url: "https://doi.org/10.1016/j.jag.2024.103883"
 
 - title: "Combining Multitemporal Optical and Radar Satellite Data for Mapping the Tatra Mountains Non-Forest Plant Communities"
   authors: "**M. Kluczek**, B. Zagajewski, M. Kycko"
   venue: "Remote Sensing"
   year: 2024
-  tags: ["Land cover", "Machine learning"]
+  tags: ["Machine learning"]
   url: "https://doi.org/10.3390/rs16081451"
 
-- title: "Mapping Management Intensity Types in Grasslands with Synergistic Use of Sentinel-1 and Sentinel-2 Satellite Images"
-  authors: "M. Bartold, **M. Kluczek**, K. Wróblewski, et al."
-  venue: "Scientific Reports"
+- title: "Estimates of Crop Yield Anomalies for 2022 in Ukraine Based on Copernicus Sentinel-1, Sentinel-3 and ERA-5 Data"
+  authors: "E. Panek-Chwastyk, K. Dąbrowska-Zielińska, **M. Kluczek**, et al."
+  venue: "Sensors"
   year: 2024
-  tags: ["Grasslands", "Machine learning"]
-  url: "https://doi.org/10.1038/s41598-024-83699-4"
+  tags: ["Machine learning"]
+  url: "https://doi.org/10.3390/s24072257"
 
 - title: "Sentinel-2 versus PlanetScope Images for Goldenrod Invasive Plant Species Mapping"
   authors: "B. Zagajewski, **M. Kluczek**, K. B. Zdunek, D. Holland"
   venue: "Remote Sensing"
   year: 2024
-  tags: ["Land cover", "Machine learning"]
+  tags: ["Machine learning"]
   url: "https://doi.org/10.3390/rs16040636"
-
-- title: "Mountain Tree Species Mapping Using Sentinel-2, PlanetScope, and Airborne HySpex Hyperspectral Imagery"
-  authors: "**M. Kluczek**, B. Zagajewski, T. Zwijacz-Kozica"
-  venue: "Remote Sensing"
-  year: 2023
-  tags: ["Forests", "Hyperspectral"]
-  url: "https://doi.org/10.3390/rs15030844"
 
 - title: "A Machine Learning Approach for Mapping Chlorophyll Fluorescence at Inland Wetlands"
   authors: "M. Bartold, **M. Kluczek**"
   venue: "Remote Sensing"
   year: 2023
-  tags: ["Wetlands", "Machine learning"]
+  tags: ["Machine learning"]
   url: "https://doi.org/10.3390/rs15092392"
+
+- title: "Mountain Tree Species Mapping Using Sentinel-2, PlanetScope, and Airborne HySpex Hyperspectral Imagery"
+  authors: "**M. Kluczek**, B. Zagajewski, T. Zwijacz-Kozica"
+  venue: "Remote Sensing"
+  year: 2023
+  tags: ["Machine learning", "Hyperspectral"]
+  url: "https://doi.org/10.3390/rs15030844"
+
+- title: "Sentinel-2 and AISA Airborne Hyperspectral Images for Mediterranean Shrubland Mapping in Catalonia"
+  authors: "M. Kycko, B. Zagajewski, **M. Kluczek**, et al."
+  venue: "Remote Sensing"
+  year: 2022
+  tags: ["Hyperspectral"]
+  url: "https://doi.org/10.3390/rs14215531"
+
+- title: "Modelling Net Ecosystem Exchange in the Biebrza Wetlands Using Satellite and Meteorological Data"
+  authors: "K. Dąbrowska-Zielińska, K. Misiura, …, **M. Kluczek**"
+  venue: "Miscellanea Geographica"
+  year: 2022
+  url: "https://doi.org/10.2478/mgrsd-2022-0013"
+
+- title: "Spatiotemporal Estimation of Gross Primary Production for Terrestrial Wetlands Using Satellite and Field Data"
+  authors: "K. Dąbrowska-Zielińska, K. Misiura, …, **M. Kluczek**"
+  venue: "Remote Sensing Applications: Society and Environment"
+  year: 2022
+  url: "https://doi.org/10.1016/j.rsase.2022.100786"
 
 - title: "Airborne HySpex Hyperspectral vs. Multitemporal Sentinel-2 Images for Mountain Plant Communities Mapping"
   authors: "**M. Kluczek**, B. Zagajewski, M. Kycko"
@@ -81,16 +133,16 @@
   tags: ["Hyperspectral"]
   url: "https://doi.org/10.3390/rs14051209"
 
-- title: "Comparison of Random Forest, Support Vector Machines, and Neural Networks for Post-Disaster Forest Species Mapping"
+- title: "Comparison of Random Forest, Support Vector Machines, and Neural Networks for Post-Disaster Forest Species Mapping of the Krkonoše/Karkonosze Transboundary Biosphere Reserve"
   authors: "B. Zagajewski, **M. Kluczek**, E. Raczko, et al."
   venue: "Remote Sensing"
   year: 2021
-  tags: ["Forests", "Machine learning"]
+  tags: ["Machine learning"]
   url: "https://doi.org/10.3390/rs13132581"
 
 - title: "Comparison of Support Vector Machines and Random Forests for CORINE Land Cover Mapping"
   authors: "A. Dabija, **M. Kluczek**, B. Zagajewski, et al."
   venue: "Remote Sensing"
   year: 2021
-  tags: ["Land cover", "Machine learning"]
+  tags: ["Machine learning"]
   url: "https://doi.org/10.3390/rs13040777"

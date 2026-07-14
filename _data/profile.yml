@@ -7,6 +7,9 @@ role:        "Tech Lead (Earth Observation Algorithms)"
 affiliation: "CloudFerro S.A."
 location:    "Warsaw, Poland"
 
+# Small keyword line ABOVE your name in the hero (keep it short & punchy)
+eyebrow:     "GeoAI · Foundation Models · Earth Observation"
+
 # One punchy line under your name (the hero headline)
 tagline:     "Turning satellite signals into insights"
 
@@ -26,7 +29,7 @@ stats:
     label: "h-index"
   - value: "25+"
     label: "Publications"
-  - value: "650+"
+  - value: "686"
     label: "Citations"
 
 # Contact + profiles. Leave a url blank ("") to hide that link.

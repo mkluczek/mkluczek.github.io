@@ -289,6 +289,18 @@ img{ max-width:100%; display:block; }
 .path__more{ margin-top:2.6rem; }
 
 /* ───────────────── Publications ───────────────── */
+.pub-stats{
+  list-style:none; margin:0 0 2.2rem; padding:0;
+  display:flex; flex-wrap:wrap; gap:14px;
+}
+.pub-stats__item{
+  display:flex; flex-direction:column; gap:2px;
+  padding:14px 22px; border-radius:14px;
+  background:var(--panel); border:1px solid var(--line); min-width:120px;
+}
+.pub-stats__v{ font-family:var(--mono); font-size:1.6rem; font-weight:600; color:#fff; }
+.pub-stats__l{ font-size:.78rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+
 .pub-filters{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:2rem; }
 .pub-filters button{
   font-family:var(--font); font-size:.85rem; cursor:pointer;
@@ -325,7 +337,7 @@ img{ max-width:100%; display:block; }
 @media (max-width:520px){ .pub{ grid-template-columns:1fr; gap:6px; } .pub__year{ font-size:.9rem; } }
 
 /* ───────────────── Contact ───────────────── */
-.contact__lead{ font-size:1.15rem; color:var(--muted); max-width:52ch; margin:0 0 2rem; }
+.contact__lead{ font-size:1.15rem; color:var(--muted); max-width:none; margin:0 0 2rem; }
 .contact__links{ display:flex; flex-wrap:wrap; gap:12px; }
 
 /* ───────────────── Blog ───────────────── */
