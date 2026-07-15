@@ -43,7 +43,7 @@ layout: default
       <aside class="about__card reveal">
         <img class="about__avatar" src="{{ '/images/profile.png' | relative_url }}" alt="{{ p.name }}" loading="lazy">
         <div class="about__id">
-          <strong>{{ p.name }}</strong>
+          <strong>{{ p.name }}{% if p.credential and p.credential != "" %}, {{ p.credential }}{% endif %}</strong>
           <span>{{ p.role }}</span>
           <span class="about__org">{{ p.affiliation }}</span>
         </div>
@@ -97,7 +97,7 @@ layout: default
             <span class="tl__period">{{ x.period }}</span>
             <h4 class="tl__role">{{ x.degree }}</h4>
             <p class="tl__org">{{ x.org }}</p>
-            {% if x.note and x.note != "" %}<p class="tl__note">{{ x.note }}</p>{% endif %}
+            {% if x.honours and x.honours != "" %}<span class="tl__badge">★ {{ x.honours }}</span>{% endif %}
           </li>
           {% endfor %}
         </ol>

@@ -286,6 +286,12 @@ img{ max-width:100%; display:block; }
 .tl__role{ font-family:var(--display); font-size:1.12rem; font-weight:600; margin:.25rem 0 .1rem; }
 .tl__org{ color:var(--text); font-size:.95rem; margin:0; }
 .tl__note{ color:var(--muted); font-size:.9rem; margin:.35rem 0 0; }
+.tl__badge{
+  display:inline-flex; align-items:center; gap:6px; margin-top:.5rem;
+  font-size:.78rem; color:var(--acc); font-family:var(--font);
+  padding:4px 12px; border-radius:100px;
+  background:rgba(57,255,158,.07); border:1px solid var(--line);
+}
 .path__more{ margin-top:2.6rem; }
 
 /* ───────────────── Publications ───────────────── */

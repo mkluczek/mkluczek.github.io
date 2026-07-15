@@ -1,18 +1,19 @@
 # ─────────────────────────────────────────────────────────────
 #  Education — timeline. Newest first.
+#  `honours` shows as a small badge on its own line (optional).
 # ─────────────────────────────────────────────────────────────
 
 - period: "2021 — 2025"
-  degree: "PhD, Earth & Environmental Sciences (Remote Sensing) — diploma with honours"
+  degree: "PhD, Earth & Environmental Sciences (Remote Sensing)"
   org:    "University of Warsaw"
-  note:   ""
+  honours: "Diploma with honours"
 
 - period: "2019 — 2021"
-  degree: "MSc, Remote Sensing (Geography) — diploma with honours (GPA 4.92/5)"
+  degree: "MSc, Remote Sensing (Geography)"
   org:    "University of Warsaw"
-  note:   ""
+  honours: "Diploma with honours"
 
 - period: "2016 — 2019"
-  degree: "BSc, Geoinformatics (Geography) — diploma with honours (GPA 4.73/5)"
+  degree: "BSc, Geoinformatics (Geography)"
   org:    "University of Warsaw"
-  note:   ""
+  honours: "Diploma with honours"

@@ -3,6 +3,7 @@
 # ─────────────────────────────────────────────────────────────
 
 name:        "Marcin Kluczek"
+credential:  "PhD"          # shown after your name on the profile card ("" to hide)
 role:        "Tech Lead (Earth Observation Algorithms)"
 affiliation: "CloudFerro S.A."
 location:    "Warsaw, Poland"
