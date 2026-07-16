@@ -79,6 +79,34 @@ description: "Talks, conferences, projects, awards and memberships — Marcin Kl
       </ol>
     </div>
 
+    <!-- Outreach & Media -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Outreach &amp; Media</h2>
+      <ol class="cv__list">
+        {% assign media = site.data.media | sort: "year" | reverse %}
+        {% for m in media %}
+        <li class="cv__pub">
+          <span class="cv__year">{{ m.year }}</span>
+          <div>
+            <span class="cv__pubtitle">{{ m.title }}</span>
+            {% if m.where %}<span class="cv__venue">{{ m.where }}</span>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <!-- Peer review -->
+    <div class="cv__block reveal">
+      <h2 class="cv__h2">Peer Review</h2>
+      <p class="cv__reviewlead">Reviewer for:</p>
+      <ul class="cv__tags">
+        {% for j in site.data.reviewing %}
+        <li class="tag tag--lg">{{ j }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
     <!-- Memberships -->
     <div class="cv__block reveal">
       <h2 class="cv__h2">Memberships &amp; Networks</h2>

@@ -412,6 +412,7 @@ img{ max-width:100%; display:block; }
 .cv__authors{ display:block; color:var(--muted); font-size:.9rem; margin-top:.2rem; }
 .cv__authors strong{ color:var(--text); }
 .cv__venue{ display:block; color:var(--faint); font-size:.88rem; font-style:italic; margin-top:.15rem; }
+.cv__reviewlead{ color:var(--muted); font-size:.95rem; margin:0 0 1rem; }
 .cv__tags{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:10px; }
 .tag--lg{ font-size:.9rem; padding:8px 14px; display:inline-flex; align-items:center; gap:8px; }
 .tag__since{ font-family:var(--mono); font-size:.72rem; color:var(--acc-2); }

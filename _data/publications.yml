@@ -146,3 +146,61 @@
   year: 2021
   tags: ["Machine learning"]
   url: "https://doi.org/10.3390/rs13040777"
+
+# ── Conference papers / abstracts ──────────────────────────────
+- title: "Time, Space, and Nightlights: Global Evaluation of Major TOM Earth Embeddings"
+  authors: "M. Czerkawski, **M. Kluczek**, J. S. Bojanowski"
+  venue: "EGU General Assembly 2026"
+  year: 2026
+  tags: ["Foundation models"]
+
+- title: "AI Foundation Models for Near Real-Time Environmental Monitoring from Satellite Data"
+  authors: "B. Ostrowski, J. S. Bojanowski, **M. Kluczek**, M. Czerkawski"
+  venue: "EGU General Assembly 2026"
+  year: 2026
+  tags: ["Foundation models"]
+
+- title: "Similarity Search of Earth Observation Data Using Foundation Model Embeddings"
+  authors: "B. Augustyn, **M. Kluczek**, J. Bojanowski, M. Czerkawski"
+  venue: "EGU General Assembly 2026"
+  year: 2026
+  tags: ["Foundation models"]
+
+- title: "Can Sentinel-2 Help Characterize the Land-Management Effect on the Impact of Drought Followed by Heavy Precipitation in European Agroecosystems?"
+  authors: "M. Weynants, K. Teber, M. D. Mahecha, **M. Kluczek**, J. S. Bojanowski, F. Gans"
+  venue: "EGU General Assembly 2026"
+  year: 2026
+  tags: ["Machine learning"]
+
+- title: "A Curated Sentinel Collection to Study Cascading Droughts and Extreme Precipitation Events"
+  authors: "K. Teber, M. Weynants, F. Gans, **M. Kluczek**, J. S. Bojanowski, M. D. Mahecha"
+  venue: "EGU General Assembly 2026"
+  year: 2026
+  tags: ["Machine learning"]
+
+- title: "Developing Global Embeddings from Sentinel-1 and Sentinel-2 Data to Enhance Earth Observation Analysis"
+  authors: "**M. Kluczek**, M. Czerkawski, J. S. Bojanowski"
+  venue: "EGU General Assembly 2025"
+  year: 2025
+  tags: ["Foundation models"]
+  url: "https://doi.org/10.5194/egusphere-egu25-9632"
+
+- title: "Assessment of Post-Disturbance Changes in Spruce Mountain Forests Using Sentinel-2 Data and Machine Learning"
+  authors: "**M. Kluczek**, B. Zagajewski"
+  venue: "IGARSS 2024 (IEEE)"
+  year: 2024
+  tags: ["Machine learning"]
+  url: "https://doi.org/10.1109/IGARSS53475.2024.10642949"
+
+- title: "Crop Growth Monitoring and Yield Prediction System Applying Copernicus Data for Poland & South Africa"
+  authors: "R. Gurdak, K. Dąbrowska-Zielińska, …, **M. Kluczek**, et al."
+  venue: "IGARSS 2021 (IEEE)"
+  year: 2021
+  tags: ["Machine learning"]
+  url: "https://doi.org/10.1109/IGARSS47720.2021.9554744"
+
+- title: "CO₂ Modelling from Eddy Covariance Measurements for Biebrza Wetlands"
+  authors: "K. Misiura, K. Dąbrowska-Zielińska, …, **M. Kluczek**"
+  venue: "IGARSS 2021 (IEEE)"
+  year: 2021
+  url: "https://doi.org/10.1109/IGARSS47720.2021.9554112"

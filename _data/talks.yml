@@ -1,51 +1,53 @@
 # ─────────────────────────────────────────────────────────────
 #  Selected talks & conference presentations. Newest first.
+#  (Curated to the significant / international appearances —
+#   add or remove entries freely.)
 # ─────────────────────────────────────────────────────────────
 
 - year: 2026
-  title: "Time, Space, and Nightlights: Global Evaluation of Major TOM Earth Embeddings"
-  event: "EGU General Assembly 2026"
-  location: "Vienna, Austria"
+  title: "GeoAI Embeddings and Anomaly Detection for Satellite-Based Monitoring"
+  event: "ESA Φ-Innovation Summit 2026"
+  location: "Rome, Italy"
 
 - year: 2026
-  title: "AI Foundation Models for Near Real-Time Environmental Monitoring from Satellite Data"
-  event: "EGU General Assembly 2026"
-  location: "Vienna, Austria"
-
-- year: 2026
-  title: "Similarity Search of Earth Observation Data Using Foundation Model Embeddings"
-  event: "EGU General Assembly 2026"
-  location: "Vienna, Austria"
-
-- year: 2026
-  title: "Can Sentinel-2 Help Characterize the Land-Management Effect on Drought Followed by Heavy Precipitation in European Agroecosystems?"
-  event: "EGU General Assembly 2026"
-  location: "Vienna, Austria"
+  title: "Integrating AI Inference into Sentinel Cloud-Based Pipelines"
+  event: "CARTO Workshop 2026"
+  location: "Barcelona, Spain"
 
 - year: 2025
-  title: "ARCEME: Adaptation and Resilience to Climate Extremes and Multi-hazard Events"
-  event: "ESA Living Planet Symposium 2025"
-  location: "Vienna, Austria"
+  title: "AI-Driven Earth Observation: From Embeddings to Environmental Insights"
+  event: "Data Science Summit 2025"
+  location: "Warsaw, Poland"
 
 - year: 2025
-  title: "Monitoring mountain forest disturbance and recovery using Sentinel-2 dense time series"
+  title: "Real-Time Earth Observation Products Based on Foundation Model Embeddings"
+  event: "ESA Big Data From Space 2025"
+  location: "Riga, Latvia"
+
+- year: 2025
+  title: "Monitoring Mountain Forest Disturbance and Recovery Using Sentinel-2 Dense Time Series"
   event: "IGARSS 2025 — IEEE Int. Geoscience and Remote Sensing Symposium"
   location: "Brisbane, Australia"
 
 - year: 2025
-  title: "Scalable Earth Observation Analytics through Global Major TOM Embeddings of Sentinel-1 and Sentinel-2 Data"
-  event: "ESA–NASA International Workshop on AI Foundation Models for EO, ESA-ESRIN"
-  location: "Frascati, Italy"
-
-- year: 2025
-  title: "Developing Global Embeddings from Sentinel-1 and Sentinel-2 Data to Enhance Earth Observation Analysis"
-  event: "EGU General Assembly 2025"
+  title: "Scalable Earth Observation Analytics with Cloud Computing and AI Solutions"
+  event: "ESA Living Planet Symposium 2025"
   location: "Vienna, Austria"
 
-- year: 2024
-  title: "Assessment of Post-Disturbance Changes in Spruce Mountain Forests Using Sentinel-2 Data and Machine Learning"
-  event: "IGARSS 2024 — IEEE Int. Geoscience and Remote Sensing Symposium"
-  location: "Athens, Greece"
+- year: 2025
+  title: "Generating Global-Scale Embeddings for Enhanced Analysis of Sentinel-1 and Sentinel-2 Data"
+  event: "ESA Living Planet Symposium 2025"
+  location: "Vienna, Austria"
+
+- year: 2025
+  title: "Cloud-Based Framework for Data Cube Extraction of Extreme Events"
+  event: "ESA Living Planet Symposium 2025"
+  location: "Vienna, Austria"
+
+- year: 2025
+  title: "Scalable Earth Observation Analytics through Global Major TOM Embeddings of Sentinel-1 and Sentinel-2 Data"
+  event: "ESA–NASA Int. Workshop on AI Foundation Models for EO, ESA-ESRIN"
+  location: "Frascati, Italy"
 
 - year: 2023
   title: "Chlorophyll Fluorescence Mapping in Inland Wetlands through Machine Learning Techniques"
@@ -63,8 +65,8 @@
   location: "Potsdam, Germany"
 
 - year: 2022
-  title: "Tools for information to farmers on grasslands yields under stressed conditions (GrasSAT)"
-  event: "ESA Living Planet Symposium"
+  title: "Tools for Information to Farmers on Grasslands Yields under Stressed Conditions (GrasSAT)"
+  event: "ESA Living Planet Symposium 2022"
   location: "Bonn, Germany"
 
 - year: 2021
