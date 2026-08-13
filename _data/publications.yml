@@ -161,6 +161,7 @@
   venue: "EGU General Assembly 2026"
   year: 2026
   tags: ["Foundation models"]
+  url: "https://doi.org/10.5194/egusphere-egu26-13425"
 
 - title: "AI Foundation Models for Near Real-Time Environmental Monitoring from Satellite Data"
   type: "conference"
@@ -168,6 +169,7 @@
   venue: "EGU General Assembly 2026"
   year: 2026
   tags: ["Foundation models"]
+  url: "https://doi.org/10.5194/egusphere-egu26-9658"
 
 - title: "Similarity Search of Earth Observation Data Using Foundation Model Embeddings"
   type: "conference"
@@ -175,6 +177,7 @@
   venue: "EGU General Assembly 2026"
   year: 2026
   tags: ["Foundation models"]
+  url: "https://doi.org/10.5194/egusphere-egu26-14376"
 
 - title: "Can Sentinel-2 Help Characterize the Land-Management Effect on the Impact of Drought Followed by Heavy Precipitation in European Agroecosystems?"
   type: "conference"
@@ -182,6 +185,7 @@
   venue: "EGU General Assembly 2026"
   year: 2026
   tags: ["Machine learning"]
+  url: "https://doi.org/10.5194/egusphere-egu26-13636"
 
 - title: "A Curated Sentinel Collection to Study Cascading Droughts and Extreme Precipitation Events"
   type: "conference"
@@ -189,6 +193,7 @@
   venue: "EGU General Assembly 2026"
   year: 2026
   tags: ["Machine learning"]
+  url: "https://doi.org/10.5194/egusphere-egu26-14030"
 
 - title: "Developing Global Embeddings from Sentinel-1 and Sentinel-2 Data to Enhance Earth Observation Analysis"
   type: "conference"
