@@ -37,13 +37,15 @@ intro: >
   and my focus now is making AI-for-EO scalable, reliable and
   reproducible on cloud infrastructure.
 
-# Headline stats (shown as chips in the hero). Update the numbers.
+# Headline stats (shown as chips in the Publications section).
+#  - "auto" for Publications counts the list automatically.
+#  - or replace with a fixed number, e.g. "30+".
 stats:
   - value: "13"
     label: "h-index"
-  - value: "25+"
+  - value: "auto"
     label: "Publications"
-  - value: "680+"
+  - value: "700+"
     label: "Citations"
 
 # Contact + profiles. Leave a url blank ("") to hide that link.

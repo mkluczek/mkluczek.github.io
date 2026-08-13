@@ -317,6 +317,12 @@ img{ max-width:100%; display:block; }
 .pub-filters button:hover{ color:var(--text); border-color:var(--line-2); }
 .pub-filters button.is-active{ color:#04120c; font-weight:600; background:var(--acc-grad); border-color:transparent; }
 
+.pub-subhead{
+  font-family:var(--mono); font-size:.82rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--acc); margin:0 0 .4rem; display:flex; align-items:center; gap:12px;
+}
+.pub-subhead::before{ content:""; width:20px; height:2px; border-radius:2px; background:var(--acc-grad); }
+.pub-subhead--gap{ margin-top:3rem; }
 .pubs{ list-style:none; margin:0; padding:0; }
 .pub{
   display:grid; grid-template-columns:88px 1fr; gap:20px;

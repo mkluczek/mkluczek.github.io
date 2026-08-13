@@ -137,19 +137,37 @@ layout: default
 <section class="section" id="publications">
   <div class="wrap">
     <p class="section__kicker reveal">05 — Publications</p>
-    <h2 class="section__title reveal">Selected work.</h2>
+    <h2 class="section__title reveal">All publications.</h2>
 
     {% if p.stats %}
     <ul class="pub-stats reveal">
       {% for s in p.stats %}
-      <li class="pub-stats__item"><span class="pub-stats__v">{{ s.value }}</span><span class="pub-stats__l">{{ s.label }}</span></li>
+      <li class="pub-stats__item"><span class="pub-stats__v">{% if s.value == "auto" %}{{ site.data.publications | size }}{% else %}{{ s.value }}{% endif %}</span><span class="pub-stats__l">{{ s.label }}</span></li>
       {% endfor %}
     </ul>
     {% endif %}
 
-    <ol class="pubs" id="pubList">
-      {% assign pubs = site.data.publications | sort: "year" | reverse %}
-      {% for pub in pubs %}
+    {% assign journals = site.data.publications | where_exp: "pub", "pub.type != 'conference'" | sort: "year" | reverse %}
+    {% assign confs = site.data.publications | where: "type", "conference" | sort: "year" | reverse %}
+
+    <h3 class="pub-subhead reveal">Journal Articles</h3>
+    <ol class="pubs">
+      {% for pub in journals %}
+      <li class="pub reveal">
+        <div class="pub__year">{{ pub.year }}</div>
+        <div class="pub__body">
+          <h3 class="pub__title">
+            {% if pub.url and pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+          </h3>
+          <p class="pub__meta"><span class="pub__venue">{{ pub.venue }}</span></p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+
+    <h3 class="pub-subhead pub-subhead--gap reveal">Conference Papers</h3>
+    <ol class="pubs">
+      {% for pub in confs %}
       <li class="pub reveal">
         <div class="pub__year">{{ pub.year }}</div>
         <div class="pub__body">
