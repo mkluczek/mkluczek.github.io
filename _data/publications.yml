@@ -11,6 +11,13 @@
 #    url       DOI / link to the paper (optional)
 # ─────────────────────────────────────────────────────────────
 
+- title: "From Observation to Action: the Future of EO-Driven Multi-Hazard Risk Assessment"
+  authors: "P. Ribeiro, J. Furlanetto, C. Ji, M. Mahecha, M. Weynants, F. Gans, **M. Kluczek**, J. Bojanowski, K. Teber, et al."
+  venue: "GeoHorizons, 1(1)"
+  year: 2027
+  tags: ["Machine learning"]
+  url: "https://doi.org/10.1144/gh2025-8"
+
 - title: "Land Cover Type Classification Using High-Resolution Orthophotomaps and Convolutional Neural Networks: A Case Study of Tatra National Park"
   authors: "**M. Kluczek**, B. Zagajewski, et al."
   venue: "Remote Sensing 18(1), 114"
