@@ -1,6 +1,6 @@
 # mkluczek.github.io
 
-Personal site of **Marcin Kluczek** — Earth Observation scientist.
+Personal site of **Marcin Kluczek**, Earth Observation scientist.
 A single-page, space/satellite themed site built with Jekyll and hosted on
 GitHub Pages.
 

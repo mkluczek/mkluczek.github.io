@@ -8,40 +8,40 @@
   icon:  "brain"
   blurb: >
     Generating dense, global embeddings from Sentinel-1 and Sentinel-2
-    at scale (Major TOM) — turning petabytes of imagery into a compact
+    at scale (Major TOM), turning petabytes of imagery into a compact
     latent space that powers downstream AI.
 
 - title: "Semantic Search & Image Intelligence"
   icon:  "search"
   blurb: >
     Text-to-image and image-to-image search over massive EO archives
-    using multimodal embeddings — finding what matters in satellite
+    using multimodal embeddings, finding what matters in satellite
     data without hand-crafted labels.
 
 - title: "Anomaly Detection & Monitoring"
   icon:  "pulse"
   blurb: >
     Building on EO embeddings to detect change and anomalies for
-    early-warning monitoring — configurable, reliable indicators over
+    early-warning monitoring: configurable, reliable indicators over
     large areas of interest.
 
 - title: "AI-Ready Datasets & Data Cubes"
   icon:  "database"
   blurb: >
     Curating and generating GPU-optimized training datasets and
-    analysis-ready data cubes (ZARR) — lowering the barrier to entry
+    analysis-ready data cubes (ZARR), lowering the barrier to entry
     for AI-for-EO research and production.
 
 - title: "Core Processing at Scale"
   icon:  "cpu"
   blurb: >
-    Production-grade processors on cloud infrastructure — cloud
+    Production-grade processors on cloud infrastructure: cloud
     masking, Sentinel-1 terrain correction (RTC/ARD) and
-    super-resolution — the reliable foundation under every AI service.
+    super-resolution, the reliable foundation under every AI service.
 
 - title: "GeoAI Agents & LLMs for EO"
   icon:  "bot"
   blurb: >
     Exploring natural-language, tool-using agents (via MCP) that
-    orchestrate multi-step EO analysis — an intelligent co-pilot for
+    orchestrate multi-step EO analysis, an intelligent co-pilot for
     Earth Observation workflows.

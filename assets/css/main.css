@@ -21,8 +21,8 @@
   --wrap:      1120px;
   --bar-h:     36px;
   --ease:      cubic-bezier(.22,.61,.36,1);
-  --font:      "Sora", system-ui, -apple-system, sans-serif;
-  --display:   "Saira Semi Condensed", var(--font);
+  --font:      "Montserrat", system-ui, -apple-system, sans-serif;
+  --display:   var(--font);
   --mono:      "JetBrains Mono", ui-monospace, monospace;
 }
 

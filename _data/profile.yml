@@ -30,7 +30,7 @@ tagline:     "Turning satellite signals into insights"
 # A short intro paragraph for the About section (2–4 sentences).
 intro: >
   I lead GeoAI algorithm development for Earth Observation at
-  CloudFerro — building the models and pipelines that turn petabytes of
+  CloudFerro, building the models and pipelines that turn petabytes of
   satellite data into ready-to-use AI: global embeddings and foundation
   models, semantic search, anomaly detection and analysis-ready
   datasets. My background is in remote sensing and machine learning,

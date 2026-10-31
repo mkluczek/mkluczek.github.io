@@ -8,7 +8,7 @@
   url:   "https://doi.org/10.58132/ZHJ33E"
 
 - year: 2024
-  title: "Major TOM — global, dense embeddings of Earth from Sentinel-1 and Sentinel-2"
+  title: "Major TOM: global, dense embeddings of Earth from Sentinel-1 and Sentinel-2"
   where: "Hugging Face"
   url:   "https://huggingface.co/Major-TOM"
 
