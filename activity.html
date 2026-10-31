@@ -7,16 +7,15 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
 {% assign p = site.data.profile %}
 
 <section class="section cv">
-  <div class="wrap wrap--narrow">
+  <div class="wrap">
 
-    <header class="cv__header reveal">
-      <p class="section__kicker">Talks · Projects · Awards</p>
+    <header class="cv__header">
       <h1 class="cv__name">Activity</h1>
       <p class="cv__role">Conferences, grants, honours &amp; networks by {{ p.name }}.</p>
     </header>
 
     <!-- Awards -->
-    <div class="cv__block reveal">
+    <div class="cv__block">
       <h2 class="cv__h2">Awards &amp; Honours</h2>
       <ol class="cv__list">
         {% for a in site.data.awards %}
@@ -32,7 +31,7 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
     </div>
 
     <!-- Talks -->
-    <div class="cv__block reveal">
+    <div class="cv__block">
       <h2 class="cv__h2">Talks &amp; Conferences</h2>
       <ol class="cv__list">
         {% assign talks = site.data.talks | sort: "year" | reverse %}
@@ -49,7 +48,7 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
     </div>
 
     <!-- Projects -->
-    <div class="cv__block reveal">
+    <div class="cv__block">
       <h2 class="cv__h2">Projects &amp; Grants</h2>
       <ol class="tl">
         {% for x in site.data.projects %}
@@ -63,7 +62,7 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
     </div>
 
     <!-- Datasets -->
-    <div class="cv__block reveal">
+    <div class="cv__block">
       <h2 class="cv__h2">Datasets</h2>
       <ol class="cv__list">
         {% assign dsets = site.data.datasets | sort: "year" | reverse %}
@@ -80,7 +79,7 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
     </div>
 
     <!-- Outreach & Media -->
-    <div class="cv__block reveal">
+    <div class="cv__block">
       <h2 class="cv__h2">Outreach &amp; Media</h2>
       <ol class="cv__list">
         {% assign media = site.data.media | sort: "year" | reverse %}
@@ -97,7 +96,7 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
     </div>
 
     <!-- Peer review -->
-    <div class="cv__block reveal">
+    <div class="cv__block">
       <h2 class="cv__h2">Peer Review</h2>
       <p class="cv__reviewlead">Reviewer for:</p>
       <ul class="cv__tags">
@@ -108,7 +107,7 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
     </div>
 
     <!-- Memberships -->
-    <div class="cv__block reveal">
+    <div class="cv__block">
       <h2 class="cv__h2">Memberships &amp; Networks</h2>
       <ul class="cv__tags">
         {% for m in site.data.memberships %}
@@ -117,7 +116,7 @@ description: "Talks, conferences, projects, awards and memberships by Marcin Klu
       </ul>
     </div>
 
-    <p class="reveal"><a class="btn" href="{{ '/' | relative_url }}">← Back to home</a></p>
+    <p><a class="more" href="{{ '/' | relative_url }}">← Back to home</a></p>
 
   </div>
 </section>
