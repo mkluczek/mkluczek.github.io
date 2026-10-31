@@ -41,11 +41,11 @@ intro: >
 #  - "auto" for Publications counts the list automatically.
 #  - or replace with a fixed number, e.g. "30+".
 stats:
-  - value: "13"
+  - value: "14"
     label: "h-index"
   - value: "auto"
     label: "Publications"
-  - value: "700+"
+  - value: "770+"
     label: "Citations"
 
 # Contact + profiles. Leave a url blank ("") to hide that link.
