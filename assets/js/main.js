@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   Interactions: starfield · sticky nav · scroll reveal ·
-   publication filters · card glow · spectral equalizer bars
+   Interactions: starfield · sticky nav · fade-in on scroll · publication filters
    ═══════════════════════════════════════════════════════════ */
 (function () {
   "use strict";
@@ -25,25 +24,6 @@
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
     revealEls.forEach(function (el) { io.observe(el); });
-  }
-
-  /* ── Card cursor glow ─────────────────────────────── */
-  document.querySelectorAll(".card").forEach(function (card) {
-    card.addEventListener("pointermove", function (e) {
-      var r = card.getBoundingClientRect();
-      card.style.setProperty("--mx", (e.clientX - r.left) + "px");
-    });
-  });
-
-  /* ── Spectral equalizer bars in the profile card ──── */
-  var eq = document.querySelector(".about__spectral");
-  if (eq) {
-    for (var i = 0; i < 12; i++) {
-      var li = document.createElement("li");
-      li.style.animationDelay = (i * 0.12) + "s";
-      li.style.animationDuration = (2 + (i % 4) * 0.35) + "s";
-      eq.appendChild(li);
-    }
   }
 
   /* ── Publication filters (built from data-tags) ───── */
