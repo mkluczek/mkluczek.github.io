@@ -1,7 +1,7 @@
 # mkluczek.github.io
 
 Personal site of **Marcin Kluczek**, Earth Observation scientist.
-A single-page, paper-and-ink "field notes" site built with Jekyll and hosted on
+A single-page, space/satellite themed site built with Jekyll and hosted on
 GitHub Pages.
 
 ## How to edit (no coding needed)
@@ -11,7 +11,7 @@ Almost everything lives in **`_data/`** as simple YAML files:
 | File | What it controls |
 |------|------------------|
 | `_data/profile.yml`      | Name, role, tagline, intro, (hidden) stats, contact/profile links |
-| `_data/research.yml`     | Homepage "What I work on" list (title, blurb) |
+| `_data/research.yml`     | Homepage "Research" cards (title, icon, blurb) |
 | `_data/publications.yml` | Publications list (homepage + CV) |
 | `_data/experience.yml`   | Experience timeline (homepage + CV) |
 | `_data/education.yml`    | Education timeline (homepage + CV) |
@@ -22,7 +22,8 @@ Almost everything lives in **`_data/`** as simple YAML files:
 
 - **Add a publication:** copy one entry in `_data/publications.yml`.
   Wrap your own name in `**M. Kluczek**` to bold it.
-- **Add a research item:** copy a block in `_data/research.yml` (title and blurb; `icon:` is no longer used).
+- **Add a research card:** copy a block in `_data/research.yml`. `icon:` can be
+  `brain`, `search`, `pulse`, `database`, `cpu`, `bot`, `spectrum`, `layers`, `leaf`.
 - **Change a link:** edit `_data/profile.yml`. Leave a value as `""` to hide it.
 - **Change your photo:** replace `images/profile.png`.
 
