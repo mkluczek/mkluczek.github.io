@@ -5,6 +5,11 @@
 # ─────────────────────────────────────────────────────────────
 
 - year: 2026
+  title: "Satellite-Based Anomaly Detection using GeoAI Embeddings: A Scalable Workflow"
+  event: "Open-Earth-Monitor Cyberinfrastructure (OEMC) Global Workshop 2026"
+  location: "Barcelona, Spain"
+
+- year: 2026
   title: "GeoAI Embeddings and Anomaly Detection for Satellite-Based Monitoring"
   event: "ESA Φ-Innovation Summit 2026"
   location: "Rome, Italy"
