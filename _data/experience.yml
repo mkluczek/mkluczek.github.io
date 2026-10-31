@@ -5,11 +5,13 @@
 - period: "2026–present"
   role:   "Tech Lead, Earth Observation Algorithms Team"
   org:    "CloudFerro S.A."
+  org_url: "https://www.cloudferro.com/"
   note:   "Leading GeoAI & ML algorithm development over large-scale open satellite archives."
 
 - period: "2024–2025"
   role:   "Data Scientist"
   org:    "CloudFerro S.A."
+  org_url: "https://www.cloudferro.com/"
   note:   "Foundation models, embeddings and EO pipelines on cloud infrastructure."
 
 - period: "2024–2026"

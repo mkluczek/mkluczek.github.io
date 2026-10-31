@@ -39,7 +39,7 @@ layout: default
         <div class="about__id">
           <strong>{{ p.name }}{% if p.credential and p.credential != "" %}, {{ p.credential }}{% endif %}</strong>
           <span>{{ p.role }}</span>
-          <span class="about__org">{{ p.affiliation }}</span>
+          <span class="about__org">{% if p.affiliation_url %}<a href="{{ p.affiliation_url }}" target="_blank" rel="noopener">{{ p.affiliation }}</a>{% else %}{{ p.affiliation }}{% endif %}</span>
         </div>
       </aside>
     </div>
@@ -98,7 +98,7 @@ layout: default
           <li class="tl__item">
             <span class="tl__period">{{ x.period }}</span>
             <h4 class="tl__role">{{ x.role }}</h4>
-            <p class="tl__org">{{ x.org }}</p>
+            <p class="tl__org">{% if x.org_url %}<a href="{{ x.org_url }}" target="_blank" rel="noopener">{{ x.org }}</a>{% else %}{{ x.org }}{% endif %}</p>
             {% if x.note and x.note != "" %}<p class="tl__note">{{ x.note }}</p>{% endif %}
           </li>
           {% endfor %}

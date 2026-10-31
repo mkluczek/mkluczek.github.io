@@ -346,3 +346,11 @@ img{ max-width:100%; display:block; }
 .tl__note, .post-card__excerpt, .post__body p{
   text-align:justify; text-justify:inter-word; hyphens:none; -webkit-hyphens:none;
 }
+
+/* ───────────────── Inline links (e.g. employer) ───────────────── */
+.about__lead a, .tl__org a, .about__org a{
+  text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px;
+  text-decoration-color:rgba(255,255,255,.35); transition:color .2s, text-decoration-color .2s;
+}
+.about__lead a{ color:var(--text); }
+.about__lead a:hover, .tl__org a:hover, .about__org a:hover{ color:var(--acc); text-decoration-color:var(--acc); }
