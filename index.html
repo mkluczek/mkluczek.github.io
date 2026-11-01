@@ -197,8 +197,7 @@ layout: default
     <div class="cv__block reveal">
       <h3 class="cv__h2">Talks &amp; Conferences</h3>
       <ol class="cv__list">
-        {% assign talks = site.data.talks | sort: "year" | reverse %}
-        {% for t in talks %}
+        {% for t in site.data.talks %}
         <li class="cv__pub">
           <span class="cv__year">{{ t.year }}</span>
           <div>

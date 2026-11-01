@@ -55,6 +55,11 @@
   location: "Frascati, Italy"
 
 - year: 2025
+  title: "Workflow for Large-Scale Processing and Evaluation of Global Major TOM Embeddings for Sentinel-1 and Sentinel-2 Data"
+  event: "ESA–NASA Int. Workshop on AI Foundation Models for EO, ESA-ESRIN"
+  location: "Frascati, Italy"
+
+- year: 2025
   title: "NSIS-Cloud: the National Satellite Information System, Space in the Cloud"
   event: "Data Science Summit 2025"
   location: "Warsaw, Poland"
@@ -67,6 +72,11 @@
 - year: 2025
   title: "AI Embeddings and Foundation Models for Earth Observation"
   event: "ESA Living Planet Symposium 2025"
+  location: "Vienna, Austria"
+
+- year: 2025
+  title: "Developing Global Embeddings from Sentinel-1 and Sentinel-2 Data to Enhance Earth Observation Analysis"
+  event: "EGU General Assembly 2025"
   location: "Vienna, Austria"
 
 - year: 2025
@@ -84,11 +94,6 @@
   event: "GrasSAT Project Conference"
   location: "Warsaw, Poland"
 
-- year: 2025
-  title: "Developing Global Embeddings from Sentinel-1 and Sentinel-2 Data to Enhance Earth Observation Analysis"
-  event: "EGU General Assembly 2025"
-  location: "Vienna, Austria"
-
 - year: 2024
   title: "Assessment of Post-Disturbance Changes in Spruce Mountain Forests Using Sentinel-2 Data and Machine Learning"
   event: "IGARSS 2024, IEEE Int. Geoscience and Remote Sensing Symposium"
@@ -104,10 +109,43 @@
   event: "42nd EARSeL Symposium"
   location: "Bucharest, Romania"
 
+- year: 2023
+  title: "Comparison of Machine Learning Algorithms for Land Cover Mapping According to Corine Land Cover Nomenclature"
+  event: "42nd EARSeL Symposium"
+  location: "Bucharest, Romania"
+
+- year: 2023
+  title: "Wykorzystanie danych teledetekcyjnych do wspomagania zarządzania użytkami zielonymi: projekt GrasSAT"
+  event: "V Ogólnopolska Konferencja „Środowisko przyrodnicze jako obszar badań”, Adam Mickiewicz University"
+  location: "Poznań, Poland"
+
+- year: 2023
+  title: "Klasyfikacja gatunków drzewiastych Tatrzańskiego Rezerwatu Biosfery z wykorzystaniem technik uczenia maszynowego"
+  event: "V Ogólnopolska Konferencja „Środowisko przyrodnicze jako obszar badań”, Adam Mickiewicz University"
+  location: "Poznań, Poland"
+
+- year: 2022
+  title: "Kartowanie drzewostanów Tatr na podstawie danych teledetekcyjnych i algorytmów uczenia maszynowego"
+  event: "Ogólnopolska Konferencja Fotointerpretacji i Teledetekcji, Polish Academy of Sciences (PAN)"
+
+- year: 2022
+  title: "Klasyfikacja roślinności Tatr Zachodnich na podstawie danych teledetekcyjnych i algorytmów uczenia maszynowego"
+  event: "II Konferencja: Wykorzystanie Danych Obserwacji Ziemi i Danych Programu Copernicus w Administracji i Sektorze Prywatnym"
+
 - year: 2022
   title: "HySpex Airborne Hyperspectral vs. Multitemporal Sentinel-2 for Mapping High-Mountain Plant Communities"
   event: "12th EARSeL Workshop on Imaging Spectroscopy"
   location: "Potsdam, Germany"
+
+- year: 2022
+  title: "Klasyfikacja zbiorowisk roślinnych Tatr Zachodnich na podstawie danych teledetekcyjnych i algorytmów uczenia maszynowego"
+  event: "CAA – Forum GIS UW, University of Warsaw"
+  location: "Warsaw, Poland"
+
+- year: 2022
+  title: "Kartowanie zbiorowisk roślinnych Tatr Zachodnich na podstawie danych teledetekcyjnych i algorytmów uczenia maszynowego"
+  event: "IV Ogólnopolska Konferencja „Środowisko przyrodnicze jako obszar badań”, Adam Mickiewicz University"
+  location: "Poznań, Poland"
 
 - year: 2022
   title: "Tools for Information to Farmers on Grasslands Yields under Stressed Conditions (GrasSAT)"
@@ -115,7 +153,21 @@
   location: "Bonn, Germany"
 
 - year: 2021
+  title: "Wykorzystanie teledetekcji satelitarnej do klasyfikacji pokrycia terenu w Europie"
+  event: "Wirtualna Konferencja Naukowa Kampusu Ochota 2, University of Warsaw"
+  location: "Warsaw, Poland"
+
+- year: 2021
   title: "Assessment of the Effectiveness of Land Cover Classification According to CORINE Land Cover Nomenclature"
   event: "40th EARSeL Symposium"
   location: "Warsaw, Poland"
 
+- year: 2021
+  title: "Comparison of Random Forest and Support Vector Machines for Forest Species Mapping of the UNESCO Krkonoše/Karkonosze Transboundary Biosphere Reserve"
+  event: "40th EARSeL Symposium"
+  location: "Warsaw, Poland"
+
+- year: 2021
+  title: "Ocena przydatności obrazów Sentinel-2 do klasyfikacji pokrycia terenu według Corine Land Cover"
+  event: "Wykorzystanie Danych Satelitarnych i Danych Programu Copernicus w Administracji i Sektorze Prywatnym, Institute of Geodesy and Cartography"
+  location: "Warsaw, Poland"
