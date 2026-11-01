@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
   {%- assign pr = site.data.profile -%}
-  {%- capture sameas_raw -%}{% if pr.links.scholar != "" %}{{ pr.links.scholar }}|{% endif %}{% if pr.links.orcid != "" %}{{ pr.links.orcid }}|{% endif %}{% if pr.links.github != "" %}{{ pr.links.github }}|{% endif %}{% if pr.links.linkedin != "" %}{{ pr.links.linkedin }}|{% endif %}{% if pr.links.researchgate != "" %}{{ pr.links.researchgate }}{% endif %}{%- endcapture -%}
+  {%- capture sameas_raw -%}{% if pr.links.scholar != "" %}{{ pr.links.scholar }}|{% endif %}{% if pr.links.orcid != "" %}{{ pr.links.orcid }}|{% endif %}{% if pr.links.github != "" %}{{ pr.links.github }}|{% endif %}{% if pr.links.huggingface != "" %}{{ pr.links.huggingface }}|{% endif %}{% if pr.links.linkedin != "" %}{{ pr.links.linkedin }}|{% endif %}{% if pr.links.researchgate != "" %}{{ pr.links.researchgate }}{% endif %}{%- endcapture -%}
   {%- assign sameas = sameas_raw | split: "|" -%}
   <script type="application/ld+json">
   {

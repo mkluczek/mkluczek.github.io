@@ -289,6 +289,7 @@ layout: default
       {% if p.links.email != "" %}<a class="chip" href="mailto:{{ p.links.email }}">{% include social.html name="email" %}Email</a>{% endif %}
       {% if p.links.linkedin != "" %}<a class="chip" href="{{ p.links.linkedin }}" target="_blank" rel="noopener">{% include social.html name="linkedin" %}LinkedIn</a>{% endif %}
       {% if p.links.github != "" %}<a class="chip" href="{{ p.links.github }}" target="_blank" rel="noopener">{% include social.html name="github" %}GitHub</a>{% endif %}
+      {% if p.links.huggingface != "" %}<a class="chip" href="{{ p.links.huggingface }}" target="_blank" rel="noopener">{% include social.html name="huggingface" %}Hugging Face</a>{% endif %}
       {% if p.links.orcid != "" %}<a class="chip" href="{{ p.links.orcid }}" target="_blank" rel="noopener">{% include social.html name="orcid" %}ORCID</a>{% endif %}
       {% if p.links.scholar != "" %}<a class="chip" href="{{ p.links.scholar }}" target="_blank" rel="noopener">{% include social.html name="scholar" %}Google Scholar</a>{% endif %}
       {% if p.links.researchgate != "" %}<a class="chip" href="{{ p.links.researchgate }}" target="_blank" rel="noopener">{% include social.html name="researchgate" %}ResearchGate</a>{% endif %}
