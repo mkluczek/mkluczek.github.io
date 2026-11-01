@@ -273,7 +273,7 @@ layout: default
       <h3 class="cv__h2">Memberships &amp; Networks</h3>
       <ul class="cv__tags">
         {% for m in site.data.memberships %}
-        <li class="tag tag--lg">{{ m.name }}<span class="tag__since">since {{ m.since }}</span></li>
+        <li class="tag tag--lg">{% if m.url %}<a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}<span class="tag__since">since {{ m.since }}</span></li>
         {% endfor %}
       </ul>
     </div>

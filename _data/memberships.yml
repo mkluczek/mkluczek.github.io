@@ -4,18 +4,23 @@
 
 - since: 2024
   name:  "GEO Mountains"
+  url:   "https://geomountains.org/"
 
 - since: 2023
   name:  "COST Action PANGEOS, WG.4 Uncertainty Analysis & Standardization"
+  url:   "https://pangeos.eu/"
 
 - since: 2022
   name:  "GEO BON, Group on Earth Observations Biodiversity Observation Network"
+  url:   "https://geobon.org/"
 
 - since: 2022
   name:  "Global Land Programme (GLP)"
+  url:   "https://glp.earth/"
 
 - since: 2021
   name:  "EARSeL, European Association of Remote Sensing Laboratories"
+  url:   "https://earsel.org/"
 
 - since: 2021
   name:  "Organizing Committee member, 40th EARSeL Symposium, University of Warsaw"
