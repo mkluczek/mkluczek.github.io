@@ -96,11 +96,11 @@
   var sat = { p: 0.02, wait: 0 };
   var ACC = "47,224,181";
 
-  // The path follows the name in the hero: a shallow arc just above it.
+  // The path follows the name in the hero: an arc rising over it.
   var nameEl = document.querySelector(".hero__name");
-  var baseY = 0;
+  var baseY = 0, amp = 0;
   function satPos(p) {
-    var y = baseY - Math.sin(Math.PI * p) * 30 * dpr;
+    var y = baseY - Math.sin(Math.PI * p) * amp;
     return { x: (-0.06 + 1.12 * p) * w, y: y };
   }
 
@@ -113,6 +113,7 @@
 
     var top = nameEl ? nameEl.getBoundingClientRect().top : innerHeight * 0.3;
     baseY = (top - 18) * dpr;
+    amp = Math.max(30, Math.min(150, top - 110)) * dpr;      // deeper arc where there is room
 
     var a = satPos(sat.p), b = satPos(sat.p + 0.002);
     var ang = Math.atan2(b.y - a.y, b.x - a.x);
