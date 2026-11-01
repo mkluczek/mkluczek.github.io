@@ -92,6 +92,66 @@
     }
   }
 
+  /* ── Satellite crossing the sky (visible over the hero) ── */
+  var sat = { p: 0.12, wait: 0, trail: [] };
+  var ACC = "47,224,181";
+
+  function satPos(p) {
+    var y = h * (0.72 - 0.52 * p) - Math.sin(Math.PI * p) * h * 0.1;
+    return { x: (-0.06 + 1.12 * p) * w, y: y };
+  }
+
+  function drawSat() {
+    var vis = 1 - window.pageYOffset / (innerHeight * 0.85);
+    if (sat.wait > 0) { sat.wait--; return; }
+    sat.p += 1 / (60 * 26);                       // ~26 s per crossing
+    if (sat.p > 1) { sat.p = 0; sat.wait = 60 * 8; sat.trail = []; return; }
+
+    var a = satPos(sat.p), b = satPos(sat.p + 0.002);
+    var ang = Math.atan2(b.y - a.y, b.x - a.x);
+    sat.trail.push(a);
+    if (sat.trail.length > 110) sat.trail.shift();
+    if (vis <= 0) return;
+
+    // fading orbit trail
+    ctx.lineWidth = dpr;
+    for (var i = 1; i < sat.trail.length; i++) {
+      var f = i / sat.trail.length;
+      ctx.strokeStyle = "rgba(" + ACC + "," + (f * 0.3 * vis).toFixed(3) + ")";
+      ctx.beginPath();
+      ctx.moveTo(sat.trail[i - 1].x, sat.trail[i - 1].y);
+      ctx.lineTo(sat.trail[i].x, sat.trail[i].y);
+      ctx.stroke();
+    }
+
+    // spacecraft: body + two solar panels, panels perpendicular to heading
+    var k = Math.max(0.8, Math.min(1.25, innerWidth / 1200)) * dpr;
+    ctx.save();
+    ctx.translate(a.x, a.y);
+    ctx.rotate(ang + Math.PI / 2);
+    ctx.scale(k, k);
+    ctx.globalAlpha = Math.min(1, vis);
+    ctx.fillStyle = "#cfd8e6";
+    ctx.fillRect(-4, -5, 8, 10);                                  // body
+    ctx.fillStyle = "rgba(" + ACC + ",0.55)";
+    ctx.fillRect(-19, -3, 13, 6);                                 // left panel
+    ctx.fillRect(6, -3, 13, 6);                                   // right panel
+    ctx.strokeStyle = "rgba(12,13,17,0.7)";
+    ctx.lineWidth = 0.7;
+    ctx.beginPath();
+    for (var x = -15; x <= 15; x += 4.5) {
+      if (Math.abs(x) < 5) continue;
+      ctx.moveTo(x, -3); ctx.lineTo(x, 3);
+    }
+    ctx.stroke();
+    ctx.strokeStyle = "#cfd8e6";
+    ctx.beginPath(); ctx.moveTo(0, -5); ctx.lineTo(0, -9); ctx.stroke();   // antenna
+    var blink = Math.max(0, Math.sin(t * 5));                             // beacon
+    ctx.fillStyle = "rgba(" + ACC + "," + blink.toFixed(2) + ")";
+    ctx.beginPath(); ctx.arc(0, -9.5, 1.4, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+  }
+
   var t = 0;
   function draw() {
     t += 0.016;
@@ -111,6 +171,7 @@
       ctx.arc(s.x, s.y, r, 0, Math.PI * 2);
       ctx.fill();
     }
+    drawSat();
     requestAnimationFrame(draw);
   }
 
