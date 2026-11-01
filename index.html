@@ -263,7 +263,7 @@ layout: default
       <p class="cv__reviewlead">Reviewer for:</p>
       <ul class="cv__tags">
         {% for j in site.data.reviewing %}
-        <li class="tag tag--lg">{{ j }}</li>
+        <li class="tag tag--lg"><a href="{{ j.url }}" target="_blank" rel="noopener">{{ j.name }}</a></li>
         {% endfor %}
       </ul>
     </div>
