@@ -185,8 +185,8 @@ layout: default
         <li class="cv__pub">
           <span class="cv__year">{{ a.year }}</span>
           <div>
-            <span class="cv__pubtitle">{{ a.title }}</span>
-            {% if a.org %}<span class="cv__venue">{% if a.org_url %}<a href="{{ a.org_url }}" target="_blank" rel="noopener">{{ a.org }}</a>{% else %}{{ a.org }}{% endif %}</span>{% endif %}
+            <span class="cv__pubtitle">{% if a.count %}<span class="cv__count">{{ a.count }}</span>{% endif %}{{ a.title }}</span>
+            {% if a.org %}<span class="cv__venue">{% if a.org_url %}<a href="{{ a.org_url }}" target="_blank" rel="noopener">{{ a.org }}</a>{% else %}{{ a.org }}{% endif %}{% if a.note %} · {{ a.note }}{% endif %}</span>{% endif %}
           </div>
         </li>
         {% endfor %}

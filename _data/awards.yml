@@ -5,6 +5,7 @@
 - year: "2026"
   title: "Prime Minister's Award for outstanding doctoral dissertation"
   org:   "Polish Prime Minister"
+  org_url: "https://www.gov.pl/web/premier/nagrody-premiera"
 
 - year: "2025"
   title: "Dean's Award, Faculty of Geography and Regional Studies"
@@ -12,7 +13,9 @@
   org_url: "https://en.uw.edu.pl/"
 
 - year: "2023–2025"
-  title: "IDUB scholarship for doctoral dissertations aligned with Priority Research Areas (editions I, II, III)"
+  title: "IDUB scholarship for doctoral dissertations aligned with Priority Research Areas"
+  count: "3×"
+  note:  "editions I, II and III"
   org:   "University of Warsaw"
   org_url: "https://en.uw.edu.pl/"
 
@@ -24,8 +27,11 @@
 - year: "2021"
   title: "Laureate, 4th Minister of Development competition in geoinformation, MSc thesis category"
   org:   "Ministry of Development, Labour and Technology"
+  org_url: "https://www.gov.pl/web/rozwoj-technologia/konkurs-ministra-rozwoju-pracy-i-technologii-w-dziedzinie-geoinformacji-rozstrzygniety2"
 
 - year: "2016–2021"
-  title: "Rector's scholarship for the best students (2016/17, 2017/18, 2020/21)"
+  title: "Rector's scholarship for the best students"
+  count: "3×"
+  note:  "2016/17, 2017/18, 2020/21"
   org:   "University of Warsaw"
   org_url: "https://en.uw.edu.pl/"

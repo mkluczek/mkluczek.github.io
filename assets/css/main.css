@@ -316,6 +316,7 @@ img{ max-width:100%; display:block; }
 .cv__pub:first-child{ border-top:none; }
 .cv__year{ white-space:nowrap; font-family:var(--mono); font-size:.92rem; color:var(--acc-2); }
 .cv__pubtitle{ display:block; font-weight:500; }
+.cv__count{ font-family:var(--mono); font-weight:500; color:var(--acc); margin-right:.55em; }
 .cv__pubtitle a:hover{ color:var(--acc-2); }
 .cv__authors{ display:block; color:var(--muted); font-size:.9rem; margin-top:.2rem; }
 .cv__authors strong{ color:var(--text); }
