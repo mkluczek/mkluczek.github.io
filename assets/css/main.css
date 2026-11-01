@@ -348,9 +348,10 @@ img{ max-width:100%; display:block; }
 }
 
 /* ───────────────── Inline links (e.g. employer) ───────────────── */
-.about__lead a, .tl__org a, .about__org a, .cv__tags a{
+.about__lead a, .tl__org a, .about__org a, .cv__tags a, .cv__venue a{
   text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px;
   text-decoration-color:rgba(255,255,255,.35); transition:color .2s, text-decoration-color .2s;
 }
 .about__lead a{ color:var(--text); }
-.about__lead a:hover, .tl__org a:hover, .about__org a:hover, .cv__tags a:hover{ color:var(--acc); text-decoration-color:var(--acc); }
+.cv__venue a{ color:inherit; }
+.about__lead a:hover, .tl__org a:hover, .about__org a:hover, .cv__tags a:hover, .cv__venue a:hover{ color:var(--acc); text-decoration-color:var(--acc); }

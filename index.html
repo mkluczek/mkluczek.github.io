@@ -111,7 +111,7 @@ layout: default
           <li class="tl__item">
             <span class="tl__period">{{ x.period }}</span>
             <h4 class="tl__role">{{ x.degree }}</h4>
-            <p class="tl__org">{{ x.org }}</p>
+            <p class="tl__org">{% if x.org_url %}<a href="{{ x.org_url }}" target="_blank" rel="noopener">{{ x.org }}</a>{% else %}{{ x.org }}{% endif %}</p>
             {% if x.honours and x.honours != "" %}<span class="tl__badge">{{ x.honours }}</span>{% endif %}
           </li>
           {% endfor %}
@@ -186,7 +186,7 @@ layout: default
           <span class="cv__year">{{ a.year }}</span>
           <div>
             <span class="cv__pubtitle">{{ a.title }}</span>
-            {% if a.org %}<span class="cv__venue">{{ a.org }}</span>{% endif %}
+            {% if a.org %}<span class="cv__venue">{% if a.org_url %}<a href="{{ a.org_url }}" target="_blank" rel="noopener">{{ a.org }}</a>{% else %}{{ a.org }}{% endif %}</span>{% endif %}
           </div>
         </li>
         {% endfor %}
@@ -217,7 +217,7 @@ layout: default
         <li class="tl__item">
           <span class="tl__period">{{ x.period }} · {{ x.role }}</span>
           <h4 class="tl__role">{{ x.title }}</h4>
-          <p class="tl__org">{{ x.funder }}{% if x.org %} · {{ x.org }}{% endif %}</p>
+          <p class="tl__org">{{ x.funder }}{% if x.org %} · {% if x.org_url %}<a href="{{ x.org_url }}" target="_blank" rel="noopener">{{ x.org }}</a>{% else %}{{ x.org }}{% endif %}{% endif %}</p>
         </li>
         {% endfor %}
       </ol>

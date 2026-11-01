@@ -6,14 +6,17 @@
 - period: "2021–2025"
   degree: "PhD, Earth & Environmental Sciences (Remote Sensing)"
   org:    "University of Warsaw"
+  org_url: "https://en.uw.edu.pl/"
   honours: "Diploma with honours"
 
 - period: "2019–2021"
   degree: "MSc, Remote Sensing (Geography)"
   org:    "University of Warsaw"
+  org_url: "https://en.uw.edu.pl/"
   honours: "Diploma with honours"
 
 - period: "2016–2019"
   degree: "BSc, Geoinformatics (Geography)"
   org:    "University of Warsaw"
+  org_url: "https://en.uw.edu.pl/"
   honours: "Diploma with honours"
