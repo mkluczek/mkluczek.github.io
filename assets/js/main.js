@@ -93,11 +93,14 @@
   }
 
   /* ── Satellite crossing the sky (visible over the hero) ── */
-  var sat = { p: 0.12, wait: 0, trail: [] };
+  var sat = { p: 0.02, wait: 0 };
   var ACC = "47,224,181";
 
+  // The path follows the name in the hero: a shallow arc just above it.
+  var nameEl = document.querySelector(".hero__name");
+  var baseY = 0;
   function satPos(p) {
-    var y = h * (0.72 - 0.52 * p) - Math.sin(Math.PI * p) * h * 0.1;
+    var y = baseY - Math.sin(Math.PI * p) * 30 * dpr;
     return { x: (-0.06 + 1.12 * p) * w, y: y };
   }
 
@@ -105,23 +108,25 @@
     var vis = 1 - window.pageYOffset / (innerHeight * 0.85);
     if (sat.wait > 0) { sat.wait--; return; }
     sat.p += 1 / (60 * 26);                       // ~26 s per crossing
-    if (sat.p > 1) { sat.p = 0; sat.wait = 60 * 8; sat.trail = []; return; }
+    if (sat.p > 1) { sat.p = 0; sat.wait = 60 * 8; return; }
+    if (vis <= 0) return;
+
+    var top = nameEl ? nameEl.getBoundingClientRect().top : innerHeight * 0.3;
+    baseY = (top - 18) * dpr;
 
     var a = satPos(sat.p), b = satPos(sat.p + 0.002);
     var ang = Math.atan2(b.y - a.y, b.x - a.x);
-    sat.trail.push(a);
-    if (sat.trail.length > 110) sat.trail.shift();
-    if (vis <= 0) return;
 
-    // fading orbit trail
+    // fading orbit trail, recomputed each frame so it stays on the path
     ctx.lineWidth = dpr;
-    for (var i = 1; i < sat.trail.length; i++) {
-      var f = i / sat.trail.length;
+    var prev = a, steps = 40;
+    for (var i = 1; i <= steps; i++) {
+      var pp = sat.p - i * 0.004;
+      if (pp < 0) break;
+      var q = satPos(pp), f = 1 - i / steps;
       ctx.strokeStyle = "rgba(" + ACC + "," + (f * 0.3 * vis).toFixed(3) + ")";
-      ctx.beginPath();
-      ctx.moveTo(sat.trail[i - 1].x, sat.trail[i - 1].y);
-      ctx.lineTo(sat.trail[i].x, sat.trail[i].y);
-      ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(prev.x, prev.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+      prev = q;
     }
 
     // spacecraft: body + two solar panels, panels perpendicular to heading
